@@ -28,11 +28,11 @@ class NodeCaseRuntime(CaseRuntime):
         call(['node', self.runtime_path, test_case.source, self.get_out_path_from_case(test_case)])
 
     def dump_name(self):
-        comm_util.log_print('NodeCaseRuntime')
+        comm_util.log('NodeCaseRuntime')
 
     def dump_version(self):
         call(['node', self.runtime_path, '--version'])
-        comm_util.log_print('node version: ')
+        comm_util.log('node version: ')
         call(['node', '--version'])
 
 class ValidateCaseRuntime(CaseRuntime):
@@ -43,9 +43,9 @@ class ValidateCaseRuntime(CaseRuntime):
         self.out_js = 'outjs.js'
 
     def _case_execute(self, test_case):
-        comm_util.log_print('Call cpp...')
+        comm_util.log('Call cpp...')
         call([self.runtime_path, test_case.source, os.path.join(test_case.case_dir, self.out_cpp)])
-        comm_util.log_print('Call node...')
+        comm_util.log('Call node...')
         call(['node', self.nodejs_script_path, test_case.source, os.path.join(test_case.case_dir, self.out_js)])
 
     def _case_result(self, test_case):
@@ -55,19 +55,19 @@ class ValidateCaseRuntime(CaseRuntime):
         if outcpp_md5 == outjs_md5:
             result = 'PASS'
 
-        comm_util.log_print(result)
+        comm_util.log(result)
         return result
 
     def dump_name(self):
-        comm_util.log_print('ValidateCaseRuntime')
+        comm_util.log('ValidateCaseRuntime')
 
     def dump_info(self):
-        comm_util.log_print('%s vs. %s' % (self.runtime_path, self.nodejs_script_path))
+        comm_util.log('%s vs. %s' % (self.runtime_path, self.nodejs_script_path))
 
     def dump_version(self):
         call([self.runtime_path, '--version'])
         call(['node', self.nodejs_script_path, '--version'])
-        comm_util.log_print('node version: ')
+        comm_util.log('node version: ')
         call(['node', '--version'])
 
 def main():
@@ -78,7 +78,7 @@ def main():
 
     win_arm64 = False
     machine = comm_util.get_machine()
-    if comm_util.is_windows() and machine == WIN_ARM64:
+    if comm_util.is_windows_sys() and machine == WIN_ARM64:
         win_arm64 = True
 
     for argv in sys.argv:
@@ -100,20 +100,20 @@ def main():
         if argv == '64' or argv == 'x64':
             x64 = True
         if argv == '32' or argv == 'x86':
-            if not comm_util.is_macos() and not win_arm64:
+            if not comm_util.is_macos_sys() and not win_arm64:
                 x64 = False
 
     # system check
     if nodejs == False:
-        if not comm_util.is_windows() and not comm_util.is_macos():
-            if comm_util.is_linux():
-                comm_util.log_print('Linux only support node.')
+        if not comm_util.is_windows_sys() and not comm_util.is_macos_sys():
+            if comm_util.is_linux_sys():
+                comm_util.log('Linux only support node.')
             else:
-                comm_util.log_print('Unknown operating system.')
+                comm_util.log('Unknown operating system.')
             return
     else:
-        if not comm_util.is_windows() and not comm_util.is_macos() and not comm_util.is_linux():
-            comm_util.log_print('Unknown operating system.')
+        if not comm_util.is_windows_sys() and not comm_util.is_macos_sys() and not comm_util.is_linux_sys():
+            comm_util.log('Unknown operating system.')
             return
 
     # prepare path
@@ -121,7 +121,7 @@ def main():
     jsformatter_nodejs_script_sel = ''
 
     if nodejs == False and validate == False:
-        if comm_util.is_windows() and not win_arm64:
+        if comm_util.is_windows_sys() and not win_arm64:
             jsformatter_path_sel = JSFORMATTER_PATH_WIN
             if release and x64:
                 jsformatter_path_sel = JSFORMATTER_REL_PATH_WIN_64
@@ -129,11 +129,11 @@ def main():
                 jsformatter_path_sel = JSFORMATTER_PATH_WIN_64
             elif release:
                 jsformatter_path_sel = JSFORMATTER_REL_PATH_WIN
-        if comm_util.is_windows() and win_arm64:
+        if comm_util.is_windows_sys() and win_arm64:
             jsformatter_path_sel = JSFORMATTER_PATH_WIN_ARM64
             if release:
                 jsformatter_path_sel = JSFORMATTER_REL_PATH_WIN_ARM64
-        if comm_util.is_macos():
+        if comm_util.is_macos_sys():
             jsformatter_path_sel = JSFORMATTER_PATH_MAC
             if release:
                 jsformatter_path_sel = JSFORMATTER_REL_PATH_MAC
@@ -152,8 +152,8 @@ def main():
     if nodejs:
         case_runtime = NodeCaseRuntime(jsformatter_nodejs_script_sel)
     if validate:
-        if comm_util.is_macos():
-            comm_util.log_print('Validate only support Windows.')
+        if comm_util.is_macos_sys():
+            comm_util.log('Validate only support Windows.')
             return
         case_runtime = ValidateCaseRuntime(jsformatter_path_sel, jsformatter_nodejs_script_sel)
 
@@ -166,14 +166,14 @@ def main():
     allpass = True
     idx = 1
     for name, case in test_cases.items():
-        comm_util.log_print('name: ' + name)
-        comm_util.log_print('source: ' + case.source)
-        comm_util.log_print('result: ' + case.result)
-        comm_util.log_print('running...')
+        comm_util.log('name: ' + name)
+        comm_util.log('source: ' + case.source)
+        comm_util.log('result: ' + case.result)
+        comm_util.log('running...')
 
         result = case_runtime.run_case(case)
-        comm_util.log_print('[%d/%d]' % (idx, len(test_cases)))
-        comm_util.log_print('')
+        comm_util.log('[%d/%d]' % (idx, len(test_cases)))
+        comm_util.log('')
 
         if result == 'ERROR':
             allpass = False
@@ -185,10 +185,10 @@ def main():
     duration_time = (end_time - start_time) / 1000.0
 
     if allpass:
-        comm_util.log_print('%d cases ALL PASS, took %.2fs.' % (len(test_cases), duration_time))
+        comm_util.log('%d cases ALL PASS, took %.2fs.' % (len(test_cases), duration_time))
 
-    comm_util.log_print('Test args: x64=%r, release=%r, nodejs=%r, validate=%r' % (x64, release, nodejs, validate))
-    comm_util.log_print('')
+    comm_util.log('Test args: x64=%r, release=%r, nodejs=%r, validate=%r' % (x64, release, nodejs, validate))
+    comm_util.log('')
 
     case_runtime.dump_name()
     case_runtime.dump_info()

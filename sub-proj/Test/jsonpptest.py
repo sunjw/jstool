@@ -33,7 +33,7 @@ class NativeCaseRuntime(CaseRuntime):
             call([self.runtime_path, '--sort', test_case.source, self.get_out_path_from_case(test_case)])
 
     def dump_name(self):
-        comm_util.log_print('NativeCaseRuntime')
+        comm_util.log('NativeCaseRuntime')
 
 class NodeCaseRuntime(CaseRuntime):
     def __init__(self, runtime_path, sort):
@@ -48,11 +48,11 @@ class NodeCaseRuntime(CaseRuntime):
             call(['node', self.runtime_path, '--sort', test_case.source, self.get_out_path_from_case(test_case)])
 
     def dump_name(self):
-        comm_util.log_print('NodeCaseRuntime')
+        comm_util.log('NodeCaseRuntime')
 
     def dump_version(self):
         call(['node', self.runtime_path, '--version'])
-        comm_util.log_print('node version: ')
+        comm_util.log('node version: ')
         call(['node', '--version'])
 
 class JSONPPCaseGenerator(CaseGenerator):
@@ -86,7 +86,7 @@ def main():
 
     win_arm64 = False
     machine = comm_util.get_machine()
-    if comm_util.is_windows() and machine == WIN_ARM64:
+    if comm_util.is_windows_sys() and machine == WIN_ARM64:
         win_arm64 = True
 
     for argv in sys.argv:
@@ -102,8 +102,8 @@ def main():
         release = False
 
     # system check
-    if not nodejs and not comm_util.is_windows():
-        comm_util.log_print('JsonPP native test only supports Windows.')
+    if not nodejs and not comm_util.is_windows_sys():
+        comm_util.log('JsonPP native test only supports Windows.')
         return
 
     # prepare path
@@ -138,14 +138,14 @@ def main():
     allpass = True
     idx = 1
     for name, case in test_cases.items():
-        comm_util.log_print('name: ' + name)
-        comm_util.log_print('source: ' + case.source)
-        comm_util.log_print('result: ' + case.result)
-        comm_util.log_print('running...')
+        comm_util.log('name: ' + name)
+        comm_util.log('source: ' + case.source)
+        comm_util.log('result: ' + case.result)
+        comm_util.log('running...')
 
         result = case_runtime.run_case(case)
-        comm_util.log_print('[%d/%d]' % (idx, len(test_cases)))
-        comm_util.log_print('')
+        comm_util.log('[%d/%d]' % (idx, len(test_cases)))
+        comm_util.log('')
 
         if result == 'ERROR':
             allpass = False
@@ -157,10 +157,10 @@ def main():
     duration_time = (end_time - start_time) / 1000.0
 
     if allpass:
-        comm_util.log_print('%d cases ALL PASS, took %.2fs.' % (len(test_cases), duration_time))
+        comm_util.log('%d cases ALL PASS, took %.2fs.' % (len(test_cases), duration_time))
 
-    comm_util.log_print('Test args: release=%r, nodejs=%r, sort=%r' % (release, nodejs, sort_json))
-    comm_util.log_print('')
+    comm_util.log('Test args: release=%r, nodejs=%r, sort=%r' % (release, nodejs, sort_json))
+    comm_util.log('')
 
     case_runtime.dump_name()
     case_runtime.dump_info()

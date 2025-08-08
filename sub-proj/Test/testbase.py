@@ -88,7 +88,7 @@ class CaseRuntime(object):
         if out_md5 == result_md5:
             result = 'PASS'
 
-        comm_util.log_print(result)
+        comm_util.log(result)
         return result
 
     def run_case(self, test_case):
@@ -99,10 +99,10 @@ class CaseRuntime(object):
         return os.path.join(test_case.case_dir, self.out_file)
 
     def dump_name(self):
-        comm_util.log_print('CaseRuntime')
+        comm_util.log('CaseRuntime')
 
     def dump_info(self):
-        comm_util.log_print('Using %s' % (self.runtime_path))
+        comm_util.log('Using %s' % (self.runtime_path))
 
     def dump_version(self):
         call([self.runtime_path, '--version'])
