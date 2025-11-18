@@ -37,7 +37,7 @@
                 {
                     "id": "JSTool",
                     "title": "JSTool",
-                    "icon": "resource/outline-build-24px.svg"
+                    "icon": "resource/code.svg"
                 }
             ]
         },
@@ -46,6 +46,7 @@
                 {
                     "id": "JSONTreeView",
                     "name": "JSON Tree",
+                    "icon": "resource/code.svg",
                     "when": "showJsonTreeView"
                 }
             ]
