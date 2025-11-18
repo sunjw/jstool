@@ -1,0 +1,32 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="Unicode Debug" />
+    <BuildType Name="Unicode Release" />
+    <Platform Name="ARM64" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../sub-proj/JSFormatter/JSFormatter.vcxproj" Id="edda9091-b0f7-4bf1-8e31-735dbd0da4a6">
+    <BuildType Solution="Unicode Debug|*" Project="Debug" />
+    <BuildType Solution="Unicode Release|*" Project="Release" />
+  </Project>
+  <Project Path="../sub-proj/JSFormatterTest/JSFormatterTest.vcxproj" Id="82ad0251-9ef8-4d70-80d4-d1b1ac608224">
+    <BuildType Solution="Unicode Debug|*" Project="Debug" />
+    <BuildType Solution="Unicode Release|*" Project="Release" />
+  </Project>
+  <Project Path="../sub-proj/JsonPP/JsonPP.vcxproj" Id="46aa0176-c11f-4539-a521-8ff0d57cc087">
+    <BuildType Solution="Unicode Debug|*" Project="Debug" />
+    <BuildType Solution="Unicode Release|*" Project="Release" />
+  </Project>
+  <Project Path="../sub-proj/JSParserTest/JSParserTest.vcxproj" Id="67ade6ac-4162-4f16-932f-a99f00211a14">
+    <BuildType Solution="Unicode Debug|*" Project="Debug" />
+    <BuildType Solution="Unicode Release|*" Project="Release" />
+    <Platform Solution="Debug|x64" Project="Win32" />
+    <Platform Solution="Release|x64" Project="Win32" />
+    <Build Solution="Debug|x64" Project="false" />
+    <Build Solution="Release|x64" Project="false" />
+  </Project>
+  <Project Path="JSMinNPP.vcxproj" Id="1590d7cd-7d3a-4ab7-a355-ee02f7fb987d" />
+</Solution>
