@@ -1,7 +1,5 @@
 <Solution>
   <Configurations>
-    <BuildType Name="Debug" />
-    <BuildType Name="Release" />
     <BuildType Name="Unicode Debug" />
     <BuildType Name="Unicode Release" />
     <Platform Name="ARM64" />
@@ -23,10 +21,6 @@
   <Project Path="../sub-proj/JSParserTest/JSParserTest.vcxproj" Id="67ade6ac-4162-4f16-932f-a99f00211a14">
     <BuildType Solution="Unicode Debug|*" Project="Debug" />
     <BuildType Solution="Unicode Release|*" Project="Release" />
-    <Platform Solution="Debug|x64" Project="Win32" />
-    <Platform Solution="Release|x64" Project="Win32" />
-    <Build Solution="Debug|x64" Project="false" />
-    <Build Solution="Release|x64" Project="false" />
   </Project>
   <Project Path="JSMinNPP.vcxproj" Id="1590d7cd-7d3a-4ab7-a355-ee02f7fb987d" />
 </Solution>
