@@ -1,3 +1,7 @@
+25.11.16  
+[Common] Minor tweak.  
+[NPP] Update to VS 2026.  
+
 1.2503.0  
 [Common] Fix ES6 import format.  
 [NPP] Fix potential crash on non-English Windows.  
