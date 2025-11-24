@@ -46,7 +46,7 @@ PACKAGE_UNI_ARM64_INFO = {
     'package_name': 'JSToolNPP.%s.uni.arm64.zip'
 }
 PACKAGE_INFO_LIST = [PACKAGE_UNI_32_INFO, PACKAGE_UNI_64_INFO, PACKAGE_UNI_ARM64_INFO]
-SRC_LIST = ['icon_048.png', 'jsMinNpp15.sln', 'jsMinNpp.vcxproj', 'src']
+SRC_LIST = ['icon_048.png', 'jsMinNpp18.slnx', 'JSMinNPP.vcxproj', 'src']
 
 version = 0
 
