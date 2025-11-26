@@ -100,8 +100,8 @@ if ($checking) {
                     <p>&nbsp;</p>
                     <p>What's New in <a class="smoothAnchor" href="#download"><?php echo $cur_version; ?></a>:</p>
                     <ul class="indentList discList">
-                        <li>Fix ES6 import format.</li>
-                        <li>Fix potential crash on non-English Windows.</li>
+                        <li>Update to VS 2026.</li>
+                        <li>Minor tweak.</li>
                     </ul>
                     <p>&nbsp;</p>
                     <p><a href='https://ko-fi.com/Y8Y72L3FZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></p>
