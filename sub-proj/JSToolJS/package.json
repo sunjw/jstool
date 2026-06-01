@@ -21,12 +21,6 @@
     ],
     "icon": "resource/icon_128.png",
     "activationEvents": [
-        "onCommand:extension.minJS",
-        "onCommand:extension.minJSNewFile",
-        "onCommand:extension.formatJS",
-        "onCommand:extension.JSONSort",
-        "onCommand:extension.JSONSortNewFile",
-        "onCommand:extension.JSONTreeView",
         "onLanguage:javascript",
         "onLanguage:json"
     ],
