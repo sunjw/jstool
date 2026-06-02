@@ -189,7 +189,7 @@ static string JsonMapToString(const _JsonMap& jsonMap, int nRecuLevel, bool sort
 	ret.append("{");
 	ret.append("\n");
 
-	_JsonMap::const_iterator itr = jsonMap.begin();
+	typename _JsonMap::const_iterator itr = jsonMap.begin();
 	for (; itr != jsonMap.end(); ++itr)
 	{
 		const string& key = itr->first;
@@ -211,7 +211,7 @@ static string JsonMapToString(const _JsonMap& jsonMap, int nRecuLevel, bool sort
 		{
 			ret.append(value.ToStringSorted(nRecuLevel));
 		}
-		_JsonMap::const_iterator temp = itr;
+		typename _JsonMap::const_iterator temp = itr;
 		++temp;
 		if (temp != jsonMap.end())
 		{

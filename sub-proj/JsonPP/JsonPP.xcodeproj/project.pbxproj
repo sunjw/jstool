@@ -36,7 +36,7 @@
 		41C595E12FCED9F80099F3CC /* jsonparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonparser.cpp; path = ../../trunk/src/jsonparser.cpp; sourceTree = "<group>"; };
 		41C595E32FCEDA3A0099F3CC /* jsparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../trunk/src/jsparser.h; sourceTree = "<group>"; };
 		41C595E42FCEDA560099F3CC /* jsparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../trunk/src/jsparser.cpp; sourceTree = "<group>"; };
-		41C595E62FCEDADE0099F3CC /* jsonValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonValue.cpp; path = ../../trunk/src/jsonValue.cpp; sourceTree = "<group>"; };
+		41C595E62FCEDADE0099F3CC /* jsonValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonValue.cpp; path = ../../trunk/src/jsonValue.cpp; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
