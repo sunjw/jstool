@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		41C595DC2FCED7610099F3CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595DA2FCED74D0099F3CC /* main.cpp */; };
+		41C595DD2FCED7650099F3CC /* jsonFileProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595D92FCED74D0099F3CC /* jsonFileProc.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		41C595C52FCED5330099F3CC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		41C595C72FCED5330099F3CC /* JsonPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JsonPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C595D82FCED74D0099F3CC /* jsonFileProc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonFileProc.h; path = src/jsonFileProc.h; sourceTree = "<group>"; };
+		41C595D92FCED74D0099F3CC /* jsonFileProc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonFileProc.cpp; path = src/jsonFileProc.cpp; sourceTree = "<group>"; };
+		41C595DA2FCED74D0099F3CC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		41C595DF2FCED8050099F3CC /* jsonpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonpp.h; path = ../../trunk/src/jsonpp.h; sourceTree = "<group>"; };
+		41C595E02FCED8E60099F3CC /* jsonparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonparser.h; path = ../../trunk/src/jsonparser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,8 @@
 		41C595BE2FCED5330099F3CC = {
 			isa = PBXGroup;
 			children = (
+				41C595DE2FCED7C70099F3CC /* include */,
+				41C595DB2FCED74D0099F3CC /* src */,
 				41C595C82FCED5330099F3CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +58,25 @@
 				41C595C72FCED5330099F3CC /* JsonPP */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		41C595DB2FCED74D0099F3CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				41C595D92FCED74D0099F3CC /* jsonFileProc.cpp */,
+				41C595DA2FCED74D0099F3CC /* main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		41C595DE2FCED7C70099F3CC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				41C595E02FCED8E60099F3CC /* jsonparser.h */,
+				41C595DF2FCED8050099F3CC /* jsonpp.h */,
+				41C595D82FCED74D0099F3CC /* jsonFileProc.h */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C595DC2FCED7610099F3CC /* main.cpp in Sources */,
+				41C595DD2FCED7650099F3CC /* jsonFileProc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
