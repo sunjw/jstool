@@ -18,6 +18,8 @@ JSONPP_PATH_WIN = '../../trunk/x64/debug/JsonPP.exe'
 JSONPP_REL_PATH_WIN = '../../trunk/x64/release/JsonPP.exe'
 JSONPP_PATH_WIN_ARM64 = '../../trunk/arm64/debug/JsonPP.exe'
 JSONPP_REL_PATH_WIN_ARM64 = '../../trunk/arm64/release/JsonPP.exe'
+JSONPP_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Debug/JsonPP'
+JSONPP_REL_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Release/JsonPP'
 JSONPP_NODEJS_SCRIPT_PATH = '../JSToolJS/jsonppjsnode.js'
 
 class NativeCaseRuntime(CaseRuntime):
@@ -102,7 +104,7 @@ def main():
         release = False
 
     # system check
-    if not nodejs and not comm_util.is_windows_sys():
+    if not nodejs and not comm_util.is_windows_sys() and not comm_util.is_macos_sys():
         comm_util.log('JsonPP native test only supports Windows.')
         return
 
@@ -111,7 +113,11 @@ def main():
     jsonpp_nodejs_script_sel = ''
 
     if not nodejs:
-        if not win_arm64:
+        if comm_util.is_macos_sys():
+            jsonpp_path_sel = JSONPP_PATH_MAC
+            if release:
+                jsonpp_path_sel = JSONPP_REL_PATH_MAC
+        elif not win_arm64:
             jsonpp_path_sel = JSONPP_PATH_WIN
             if release:
                 jsonpp_path_sel = JSONPP_REL_PATH_WIN
