@@ -142,6 +142,8 @@ def main():
         jsformatter_path_sel = JSFORMATTER_REL_PATH_WIN_64
         if win_arm64:
             jsformatter_path_sel = JSFORMATTER_REL_PATH_WIN_ARM64
+        if comm_util.is_macos_sys():
+            jsformatter_path_sel = JSFORMATTER_REL_PATH_MAC
     if nodejs or validate:
         jsformatter_nodejs_script_sel = JSFORMATTER_NODEJS_SCRIPT_PATH
 
@@ -152,9 +154,6 @@ def main():
     if nodejs:
         case_runtime = NodeCaseRuntime(jsformatter_nodejs_script_sel)
     if validate:
-        if comm_util.is_macos_sys():
-            comm_util.log('Validate only support Windows.')
-            return
         case_runtime = ValidateCaseRuntime(jsformatter_path_sel, jsformatter_nodejs_script_sel)
 
     # prepare cases
