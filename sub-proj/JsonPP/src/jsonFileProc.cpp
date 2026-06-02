@@ -24,14 +24,39 @@ void JsonFileProc::Save(const JsonValue& jsonValue, const tstring& outputFile, b
 	m_ofile.open(tstrtostr(outputFile).c_str());
 	if (m_ofile)
 	{
+		string outString;
 		if (!sort)
 		{
-			m_ofile << jsonValue.ToString();
+			outString = jsonValue.ToString();
 		}
 		else
 		{
-			m_ofile << jsonValue.ToStringSorted();
+			outString = jsonValue.ToStringSorted();
 		}
+
+#if defined (__APPLE__) || defined (__unix)
+		size_t segmentStart = 0;
+		for (size_t i = 0; i < outString.size(); ++i)
+		{
+			if (outString[i] == '\n' && (i == 0 || outString[i - 1] != '\r'))
+			{
+				if (i > segmentStart)
+				{
+					m_ofile.write(outString.data() + segmentStart,
+						static_cast<std::streamsize>(i - segmentStart));
+				}
+				m_ofile.write("\r\n", 2);
+				segmentStart = i + 1;
+			}
+		}
+		if (segmentStart < outString.size())
+		{
+			m_ofile.write(outString.data() + segmentStart,
+				static_cast<std::streamsize>(outString.size() - segmentStart));
+		}
+#else
+		m_ofile.write(outString.data(), static_cast<std::streamsize>(outString.size()));
+#endif
 	}
 	m_ofile.close();
 }
