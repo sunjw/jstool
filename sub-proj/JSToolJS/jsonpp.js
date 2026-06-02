@@ -238,8 +238,8 @@ class JsonParser extends JSParser.JSParser {
 
         let key,
         strValue;
-        let keyLine,
-        valLine;
+        let keyLine = -1,
+        valLine = -1;
         let bGetKey = false;
         let bGetSplitor = false;
         while (this.GetToken()) // Get next m_tokenA, m_tokenB
@@ -355,7 +355,7 @@ class JsonParser extends JSParser.JSParser {
                     keyLine = this.m_tokenA.line;
 
                     if ((key.charAt(0) == '\'' && key.charAt(key.length - 1) == '\'') ||
-                        key.charAt(0) == '"' && key.charAt(key.length - 1) == '"') {
+                        (key.charAt(0) == '"' && key.charAt(key.length - 1) == '"')) {
                         key = key.substring(1, key.length - 1);
                     }
 
@@ -425,7 +425,7 @@ class JsonParser extends JSParser.JSParser {
     GenStrJsonValue(jsonValue, value) {
         if (value.charAt(0) == '\'' || value.charAt(0) == '"') {
             if ((value.charAt(0) == '\'' && value.charAt(value.length - 1) == '\'') ||
-                value.charAt(0) == '"' && value.charAt(value.length - 1) == '"') {
+                (value.charAt(0) == '"' && value.charAt(value.length - 1) == '"')) {
                 value = value.substring(1, value.length - 1);
             }
 
