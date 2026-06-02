@@ -12,6 +12,7 @@
 		41C595E22FCED9F80099F3CC /* jsonparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595E12FCED9F80099F3CC /* jsonparser.cpp */; };
 		41C595E52FCEDA560099F3CC /* jsparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595E42FCEDA560099F3CC /* jsparser.cpp */; };
 		41C595E72FCEDADE0099F3CC /* jsonValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595E62FCEDADE0099F3CC /* jsonValue.cpp */; };
+		41C595EA2FCEDBD10099F3CC /* strhelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C595E92FCEDBD10099F3CC /* strhelper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		41C595E32FCEDA3A0099F3CC /* jsparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../trunk/src/jsparser.h; sourceTree = "<group>"; };
 		41C595E42FCEDA560099F3CC /* jsparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../trunk/src/jsparser.cpp; sourceTree = "<group>"; };
 		41C595E62FCEDADE0099F3CC /* jsonValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonValue.cpp; path = ../../trunk/src/jsonValue.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		41C595E82FCEDBBF0099F3CC /* strhelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strhelper.h; path = ../../trunk/src/strhelper.h; sourceTree = "<group>"; };
+		41C595E92FCEDBD10099F3CC /* strhelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = strhelper.cpp; path = ../../trunk/src/strhelper.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		41C595DB2FCED74D0099F3CC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				41C595E92FCEDBD10099F3CC /* strhelper.cpp */,
 				41C595E42FCEDA560099F3CC /* jsparser.cpp */,
 				41C595E12FCED9F80099F3CC /* jsonparser.cpp */,
 				41C595E62FCEDADE0099F3CC /* jsonValue.cpp */,
@@ -82,6 +86,7 @@
 		41C595DE2FCED7C70099F3CC /* include */ = {
 			isa = PBXGroup;
 			children = (
+				41C595E82FCEDBBF0099F3CC /* strhelper.h */,
 				41C595E32FCEDA3A0099F3CC /* jsparser.h */,
 				41C595E02FCED8E60099F3CC /* jsonparser.h */,
 				41C595DF2FCED8050099F3CC /* jsonpp.h */,
@@ -155,6 +160,7 @@
 				41C595DC2FCED7610099F3CC /* main.cpp in Sources */,
 				41C595DD2FCED7650099F3CC /* jsonFileProc.cpp in Sources */,
 				41C595E52FCEDA560099F3CC /* jsparser.cpp in Sources */,
+				41C595EA2FCEDBD10099F3CC /* strhelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
