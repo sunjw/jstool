@@ -394,3 +394,5 @@ Unicode Release/*
 *.old
 *.suo
 *.user
+
+.derived-data-log-*

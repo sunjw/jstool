@@ -7,4 +7,7 @@
    <FileRef
       location = "group:../sub-proj/JSFormatterTest/JSFormatterTest.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "container:../sub-proj/JsonPP/JsonPP.xcodeproj">
+   </FileRef>
 </Workspace>
