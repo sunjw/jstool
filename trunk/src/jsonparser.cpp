@@ -177,7 +177,7 @@ void JsonParser::RecursiveProc(JsonValue& jsonValue)
 				keyLine = m_tokenA.line;
 
 				if ((key[0] == '\'' && key[key.length() - 1] == '\'') ||
-					key[0] == '"' && key[key.length() - 1] == '"')
+					(key[0] == '"' && key[key.length() - 1] == '"'))
 				{
 					key = key.substr(1, key.length() - 2);
 				}
@@ -257,7 +257,7 @@ void JsonParser::GenStrJsonValue(JsonValue& jsonValue, string value)
 	if (value[0] == '\'' || value[0] == '"')
 	{
 		if ((value[0] == '\'' && value[value.length() - 1] == '\'') ||
-			value[0] == '"' && value[value.length() - 1] == '"')
+			(value[0] == '"' && value[value.length() - 1] == '"'))
 		{
 			value = value.substr(1, value.length() - 2);
 		}
