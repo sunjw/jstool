@@ -41,7 +41,7 @@ void JsonParser::RecursiveProc(JsonValue& jsonValue)
 	GetStackTop(m_blockStack, stackTop);
 
 	string key, strValue;
-	long keyLine, valLine;
+	long keyLine = -1, valLine = -1;
 	bool bGetKey = false;
 	bool bGetSplitor = false;
 
