@@ -1577,8 +1577,7 @@ class Ut {
 			let e = {};
 			n ? e = {
 				status: n
-			}
-			 : "ok" === t.status && (e = {
+			} : "ok" === t.status && (e = {
 					status: "exited"
 				}),
 			Ct(t, e)
@@ -2557,8 +2556,7 @@ class On extends tn {
 		const n = Jt(this.tt, this.Z.tunnel),
 		e = (r = t, Et((i = this.Z.tunnel && _(this.tt)) ? {
 				dsn: i
-			}
-				 : {}, [[{
+			} : {}, [[{
 							type: "client_report"
 						}, {
 							timestamp: s || wt(),
@@ -2817,8 +2815,7 @@ function Zn() {
 						}
 					]
 				}
-			}
-			 : pn(e, i, void 0, r, !0);
+			} : pn(e, i, void 0, r, !0);
 			s.level = "error",
 			ne(n, i, s, "onunhandledrejection")
 		}))
@@ -3223,8 +3220,7 @@ t.captureMessage = function (t, n) {
 	var e = "string" == typeof n ? n : void 0,
 	r = "string" != typeof n ? {
 		captureContext: n
-	}
-	 : void 0;
+	} : void 0;
 	return Ht().captureMessage(t, e, r)
 },
 t.chromeStackLineParser = Mn,

@@ -732,8 +732,7 @@ YUI.add("yui-base", function (b) {
 		w.each = (u.forEach) ? function (x, y, z) {
 			u.forEach.call(x || [], y, z || b);
 			return b;
-		}
-		 : function (y, A, B) {
+		} : function (y, A, B) {
 			var x = (y && y.length) || 0,
 			z;
 			for (z = 0; z < x; z = z + 1) {
@@ -753,8 +752,7 @@ YUI.add("yui-base", function (b) {
 		};
 		w.indexOf = (u.indexOf) ? function (x, y) {
 			return u.indexOf.call(x, y);
-		}
-		 : function (x, z) {
+		} : function (x, z) {
 			for (var y = 0; y < x.length; y = y + 1) {
 				if (x[y] === z) {
 					return y;
@@ -767,8 +765,7 @@ YUI.add("yui-base", function (b) {
 		};
 		w.some = (u.some) ? function (x, y, z) {
 			return u.some.call(x, y, z);
-		}
-		 : function (y, A, B) {
+		} : function (y, A, B) {
 			var x = y.length,
 			z;
 			for (z = 0; z < x; z = z + 1) {
@@ -1653,8 +1650,7 @@ YUI.add("yui-later", function (a) {
 			}
 			h = !b.isUndefined(j) ? function () {
 				d.apply(k, a.Array(j));
-			}
-			 : function () {
+			} : function () {
 				d.call(k);
 			};
 			l = (i) ? setInterval(h, e) : setTimeout(h, e);

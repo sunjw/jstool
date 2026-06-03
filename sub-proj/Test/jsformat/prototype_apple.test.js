@@ -4289,8 +4289,7 @@ Prototype._original_property = window.Sizzle;
 				var ret = seed ? {
 					expr: parts.pop(),
 					set: makeArray(seed)
-				}
-				 :
+				} :
 				Sizzle.find(parts.pop(), parts.length === 1 && (parts[0] === "~" || parts[0] === "+") && context.parentNode ? context.parentNode : context, contextXML);
 				set = ret.expr ? Sizzle.filter(ret.expr, ret.set) : ret.set;
 
@@ -5191,8 +5190,7 @@ Prototype._original_property = window.Sizzle;
 
 	var contains = document.compareDocumentPosition ? function (a, b) {
 		return a.compareDocumentPosition(b) & 16;
-	}
-	 : function (a, b) {
+	} : function (a, b) {
 		return a !== b && (a.contains ? a.contains(b) : true);
 	};
 
@@ -6337,8 +6335,7 @@ if (!document.getElementsByClassName)
 			className = className.toString().strip();
 			var cond = /\s/.test(className) ? $w(className).map(iter).join('') : iter(className);
 			return cond ? document._getElementsByXPath('.//*' + cond, element) : [];
-		}
-		 : function (element, className) {
+		} : function (element, className) {
 			className = className.toString().strip();
 			var elements = [],
 			classNames = (/\s/.test(className) ? $w(className) : null);

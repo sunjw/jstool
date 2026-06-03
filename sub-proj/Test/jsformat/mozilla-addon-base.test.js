@@ -1395,8 +1395,7 @@
 	};
 	var aI = U.removeEventListener ? function (w, c, A) {
 		w.removeEventListener(c, A, false)
-	}
-	 : function (w, c, A) {
+	} : function (w, c, A) {
 		w.detachEvent("on" + c, A)
 	};
 	aj.Event = function (c) {
@@ -1851,8 +1850,7 @@
 					bu = ba ? {
 						expr: ab.pop(),
 						set: c(ba)
-					}
-					 : O.find(ab.pop(), ab.length === 1 && (ab[0] === "~" || ab[0] === "+") && bo.parentNode ? bo.parentNode : bo, bq);
+					} : O.find(ab.pop(), ab.length === 1 && (ab[0] === "~" || ab[0] === "+") && bo.parentNode ? bo.parentNode : bo, bq);
 					bv = bu.expr ? O.filter(bu.expr, bu.set) : bu.set;
 					if (ab.length > 0) {
 						br = c(bv)
@@ -2526,8 +2524,7 @@
 		})();
 		var F = U.compareDocumentPosition ? function (aa, Z) {
 			return !!(aa.compareDocumentPosition(Z) & 16)
-		}
-		 : function (aa, Z) {
+		} : function (aa, Z) {
 			return aa !== Z && (aa.contains ? aa.contains(Z) : true)
 		},
 		w = function (Z) {
@@ -2997,8 +2994,7 @@
 				L = J && J.parentNode;
 				L = aj.support.parentNode && L && L.nodeType === 11 && L.childNodes.length === this.length ? {
 					fragment: L
-				}
-				 : a5(P, this, w);
+				} : a5(P, this, w);
 				F = L.fragment;
 				if (G = F.childNodes.length === 1 ? (F = F.firstChild) : F.firstChild) {
 					O = O && aj.nodeName(G, "tr");
@@ -3382,8 +3378,7 @@
 			async: true,
 			xhr: aQ.XMLHttpRequest && (aQ.location.protocol !== "file:" || !aQ.ActiveXObject) ? function () {
 				return new aQ.XMLHttpRequest
-			}
-			 : function () {
+			} : function () {
 				try {
 					return new aQ.ActiveXObject("Microsoft.XMLHTTP")
 				} catch (c) {}
@@ -3971,8 +3966,7 @@
 			top: F.top + (self.pageYOffset || aj.support.boxModel && A.scrollTop || c.scrollTop) - (A.clientTop || c.clientTop || 0),
 			left: F.left + (self.pageXOffset || aj.support.boxModel && A.scrollLeft || c.scrollLeft) - (A.clientLeft || c.clientLeft || 0)
 		}
-	}
-	 : function (O) {
+	} : function (O) {
 		var N = this[0];
 		if (O) {
 			return this.each(function (P) {
@@ -4107,8 +4101,7 @@
 			A = /^body|html$/i.test(c[0].nodeName) ? {
 				top: 0,
 				left: 0
-			}
-			 : c.offset();
+			} : c.offset();
 			F.top -= parseFloat(aj.curCSS(w, "marginTop", true)) || 0;
 			F.left -= parseFloat(aj.curCSS(w, "marginLeft", true)) || 0;
 			A.top += parseFloat(aj.curCSS(c[0], "borderTopWidth", true)) || 0;
@@ -5875,8 +5868,7 @@
 					complete: l,
 					down: o,
 					autoHeight: q.autoHeight || q.fillSpace
-				}
-				 : {
+				} : {
 					toShow: u,
 					toHide: t,
 					complete: l,
@@ -8793,8 +8785,7 @@ z.readonly = JSON.parse(document.body.getAttribute("data-readonly"));
 						var r = o ? {
 							addPopup: false,
 							addWarning: false
-						}
-						 : {};
+						} : {};
 						f(r)
 					} else {
 						if (z.app == "firefox") {
@@ -10798,8 +10789,7 @@ $(document).ready(function () {
 		m = b.extend(m, k ? {
 			over: l,
 			out: k
-		}
-				 : l);
+		} : l);
 		var o,
 		n,
 		i,

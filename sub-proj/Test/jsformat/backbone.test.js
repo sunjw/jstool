@@ -1645,8 +1645,7 @@
 			params.contentType = 'application/x-www-form-urlencoded';
 			params.data = params.data ? {
 				model: params.data
-			}
-			 : {};
+			} : {};
 		}
 
 		// For older servers, emulate HTTP by mimicking the HTTP method with `_method`

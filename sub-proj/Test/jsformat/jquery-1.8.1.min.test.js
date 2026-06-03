@@ -775,8 +775,7 @@
 		},
 		trim: o && !o.call("﻿ ") ? function (a) {
 			return a == null ? "" : o.call(a)
-		}
-		 : function (a) {
+		} : function (a) {
 			return a == null ? "" : a.toString().replace(t, "")
 		},
 		makeArray: function (a, b) {
@@ -1011,8 +1010,7 @@
 							e[d[1]](p.isFunction(g) ? function () {
 								var a = g.apply(this, arguments);
 								a && p.isFunction(a.promise) ? a.promise().done(c.resolve).fail(c.reject).progress(c.notify) : c[f + "With"](this === e ? c : this, [a])
-							}
-								 : c[f])
+							} : c[f])
 						}),
 						a = null
 					}).promise()
@@ -2008,8 +2006,7 @@
 	p.event.handle = p.event.dispatch,
 	p.removeEvent = e.removeEventListener ? function (a, b, c) {
 		a.removeEventListener && a.removeEventListener(b, c, !1)
-	}
-	 : function (a, b, c) {
+	} : function (a, b, c) {
 		var d = "on" + b;
 		a.detachEvent && (typeof a[d] == "undefined" && (a[d] = null), a.detachEvent(d, c))
 	},
@@ -2337,13 +2334,11 @@
 				while (b = b[g])
 					if (b.nodeType === 1)
 						return a(b) && b
-			}
-			 : f ? function (b) {
+			} : f ? function (b) {
 				while (b = b[g])
 					if (b.nodeType === 1 && a(b))
 						return b
-			}
-			 : function (b) {
+			} : function (b) {
 				var e,
 				f = h + "." + c,
 				i = f + "." + d;
@@ -2367,8 +2362,7 @@
 			return a ? function (c) {
 				var d = b(c);
 				return d && a(d === !0 ? c : d)
-			}
-			 : b
+			} : b
 		}
 		function bf(a, b, c) {
 			var d,
@@ -2651,11 +2645,9 @@
 			var c = a.nodeType === 9 ? a.documentElement : a,
 			d = b && b.parentNode;
 			return a === d || !!(d && d.nodeType === 1 && c.contains && c.contains(d))
-		}
-		 : r.compareDocumentPosition ? function (a, b) {
+		} : r.compareDocumentPosition ? function (a, b) {
 			return b && !!(a.compareDocumentPosition(b) & 16)
-		}
-		 : function (a, b) {
+		} : function (a, b) {
 			while (b = b.parentNode)
 				if (b === a)
 					return !0;
@@ -2672,8 +2664,7 @@
 			createPseudo: v,
 			match: S,
 			order: new RegExp("ID|TAG" + (Y ? "|NAME" : "") + (X ? "|CLASS" : "")),
-			attrHandle: V ? {}
-			 : {
+			attrHandle: V ? {} : {
 				href: function (a) {
 					return a.getAttribute("href", 2)
 				},
@@ -2687,8 +2678,7 @@
 						var d = b.getElementById(a);
 						return d && d.parentNode ? [d] : []
 					}
-				}
-				 : function (a, c, d) {
+				} : function (a, c, d) {
 					if (typeof c.getElementById !== n && !d) {
 						var e = c.getElementById(a);
 						return e ? e.id === a || typeof e.getAttributeNode !== n && e.getAttributeNode("id").value === a ? [e] : b : []
@@ -2697,8 +2687,7 @@
 				TAG: U ? function (a, b) {
 					if (typeof b.getElementsByTagName !== n)
 						return b.getElementsByTagName(a)
-				}
-				 : function (a, b) {
+				} : function (a, b) {
 					var c = b.getElementsByTagName(a);
 					if (a === "*") {
 						var d,
@@ -2765,8 +2754,7 @@
 					function (b) {
 						return b.getAttribute("id") === a
 					}
-				}
-				 : function (a) {
+				} : function (a) {
 					return a = a.replace(R, ""),
 					function (b) {
 						var c = typeof b.getAttributeNode !== n && b.getAttributeNode("id");
@@ -2776,8 +2764,7 @@
 				TAG: function (a) {
 					return a === "*" ? function () {
 						return !0
-					}
-					 : (a = a.replace(R, "").toLowerCase(), function (b) {
+					} : (a = a.replace(R, "").toLowerCase(), function (b) {
 						return b.nodeName && b.nodeName.toLowerCase() === a
 					})
 				},
@@ -2810,8 +2797,7 @@
 						case "|=":
 							return f === c || f.substr(0, c.length + 1) === c + "-"
 						}
-					}
-					 : function (b) {
+					} : function (b) {
 						return $.attr(b, a) != null
 					}
 				},
@@ -2979,8 +2965,7 @@
 		},
 		k = r.compareDocumentPosition ? function (a, b) {
 			return a === b ? (l = !0, 0) : (!a.compareDocumentPosition || !b.compareDocumentPosition ? a.compareDocumentPosition : a.compareDocumentPosition(b) & 4) ? -1 : 1
-		}
-		 : function (a, b) {
+		} : function (a, b) {
 			if (a === b)
 				return l = !0, 0;
 			if (a.sourceIndex && b.sourceIndex)
@@ -3788,8 +3773,7 @@
 		i = b.style;
 		return h && (d = h[c], d === "" && !p.contains(b.ownerDocument, b) && (d = p.style(b, c)), bQ.test(d) && bO.test(c) && (e = i.width, f = i.minWidth, g = i.maxWidth, i.minWidth = i.maxWidth = i.width = d, d = h.width, i.width = e, i.minWidth = f, i.maxWidth = g)),
 		d
-	}
-	 : e.documentElement.currentStyle && (bH = function (a, b) {
+	} : e.documentElement.currentStyle && (bH = function (a, b) {
 		var c,
 		d,
 		e = a.currentStyle && a.currentStyle[b],
@@ -4278,13 +4262,11 @@
 	cJ = a.ActiveXObject ? function () {
 		for (var a in cI)
 			cI[a](0, 1)
-	}
-	 : !1,
+	} : !1,
 	cK = 0;
 	p.ajaxSettings.xhr = a.ActiveXObject ? function () {
 		return !this.isLocal && cL() || cM()
-	}
-	 : cL,
+	} : cL,
 	function (a) {
 		p.extend(p.support, {
 			ajax: !!a,
@@ -4624,8 +4606,7 @@
 			d = c_.test(b[0].nodeName) ? {
 				top: 0,
 				left: 0
-			}
-			 : b.offset();
+			} : b.offset();
 			return c.top -= parseFloat(p.css(a, "marginTop")) || 0,
 			c.left -= parseFloat(p.css(a, "marginLeft")) || 0,
 			d.top += parseFloat(p.css(b[0], "borderTopWidth")) || 0,

@@ -1234,8 +1234,7 @@
 				return arguments.length
 				 ? fn.apply(self, concat(curryArgs, arguments, 0))
 				 : fn.apply(self, curryArgs);
-			}
-			 : function () {
+			} : function () {
 				return arguments.length
 				 ? fn.apply(self, arguments)
 				 : fn.call(self);
@@ -8189,24 +8188,20 @@
 					}
 
 					$element.data('$binding', bindings);
-				}
-				 : noop;
+				} : noop;
 
 				compile.$$addBindingClass = debugInfoEnabled ? function $$addBindingClass($element) {
 					safeAddClass($element, 'ng-binding');
-				}
-				 : noop;
+				} : noop;
 
 				compile.$$addScopeInfo = debugInfoEnabled ? function $$addScopeInfo($element, scope, isolated, noTemplate) {
 					var dataName = isolated ? (noTemplate ? '$isolateScopeNoTemplate' : '$isolateScope') : '$scope';
 					$element.data(dataName, scope);
-				}
-				 : noop;
+				} : noop;
 
 				compile.$$addScopeClass = debugInfoEnabled ? function $$addScopeClass($element, isolated) {
 					safeAddClass($element, isolated ? 'ng-isolate-scope' : 'ng-scope');
-				}
-				 : noop;
+				} : noop;
 
 				compile.$$createComment = function (directiveName, comment) {
 					var content = '';
@@ -15147,10 +15142,8 @@
 						context: undefined,
 						name: undefined,
 						value: value
-					}
-					 : value;
-				}
-				 :
+					} : value;
+				} :
 				function (scope, locals, assign, inputs) {
 					var rhs = right(scope, locals, assign, inputs);
 					var value;
@@ -15165,8 +15158,7 @@
 					}
 					return context ? {
 						value: value
-					}
-					 : value;
+					} : value;
 				};
 			case AST.AssignmentExpression:
 				left = this.recurse(ast.left, true, 1);
@@ -15179,8 +15171,7 @@
 					lhs.context[lhs.name] = rhs;
 					return context ? {
 						value: rhs
-					}
-					 : rhs;
+					} : rhs;
 				};
 			case AST.ArrayExpression:
 				args = [];
@@ -15194,8 +15185,7 @@
 					}
 					return context ? {
 						value: value
-					}
-					 : value;
+					} : value;
 				};
 			case AST.ObjectExpression:
 				args = [];
@@ -15214,29 +15204,25 @@
 					}
 					return context ? {
 						value: value
-					}
-					 : value;
+					} : value;
 				};
 			case AST.ThisExpression:
 				return function (scope) {
 					return context ? {
 						value: scope
-					}
-					 : scope;
+					} : scope;
 				};
 			case AST.LocalsExpression:
 				return function (scope, locals) {
 					return context ? {
 						value: locals
-					}
-					 : locals;
+					} : locals;
 				};
 			case AST.NGValueParameter:
 				return function (scope, locals, assign) {
 					return context ? {
 						value: assign
-					}
-					 : assign;
+					} : assign;
 				};
 			}
 		},
@@ -15251,8 +15237,7 @@
 				}
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'unary-': function (argument, context) {
@@ -15265,8 +15250,7 @@
 				}
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'unary!': function (argument, context) {
@@ -15274,8 +15258,7 @@
 				var arg = !argument(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary+': function (left, right, context) {
@@ -15285,8 +15268,7 @@
 				var arg = plusFn(lhs, rhs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary-': function (left, right, context) {
@@ -15296,8 +15278,7 @@
 				var arg = (isDefined(lhs) ? lhs : 0) - (isDefined(rhs) ? rhs : 0);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary*': function (left, right, context) {
@@ -15305,8 +15286,7 @@
 				var arg = left(scope, locals, assign, inputs) * right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary/': function (left, right, context) {
@@ -15314,8 +15294,7 @@
 				var arg = left(scope, locals, assign, inputs) / right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary%': function (left, right, context) {
@@ -15323,8 +15302,7 @@
 				var arg = left(scope, locals, assign, inputs) % right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary===': function (left, right, context) {
@@ -15332,8 +15310,7 @@
 				var arg = left(scope, locals, assign, inputs) === right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary!==': function (left, right, context) {
@@ -15341,8 +15318,7 @@
 				var arg = left(scope, locals, assign, inputs) !== right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary==': function (left, right, context) {
@@ -15350,8 +15326,7 @@
 				var arg = left(scope, locals, assign, inputs) == right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary!=': function (left, right, context) {
@@ -15359,8 +15334,7 @@
 				var arg = left(scope, locals, assign, inputs) != right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary<': function (left, right, context) {
@@ -15368,8 +15342,7 @@
 				var arg = left(scope, locals, assign, inputs) < right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary>': function (left, right, context) {
@@ -15377,8 +15350,7 @@
 				var arg = left(scope, locals, assign, inputs) > right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary<=': function (left, right, context) {
@@ -15386,8 +15358,7 @@
 				var arg = left(scope, locals, assign, inputs) <= right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary>=': function (left, right, context) {
@@ -15395,8 +15366,7 @@
 				var arg = left(scope, locals, assign, inputs) >= right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary&&': function (left, right, context) {
@@ -15404,8 +15374,7 @@
 				var arg = left(scope, locals, assign, inputs) && right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'binary||': function (left, right, context) {
@@ -15413,8 +15382,7 @@
 				var arg = left(scope, locals, assign, inputs) || right(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		'ternary?:': function (test, alternate, consequent, context) {
@@ -15422,8 +15390,7 @@
 				var arg = test(scope, locals, assign, inputs) ? alternate(scope, locals, assign, inputs) : consequent(scope, locals, assign, inputs);
 				return context ? {
 					value: arg
-				}
-				 : arg;
+				} : arg;
 			};
 		},
 		value: function (value, context) {
@@ -15432,8 +15399,7 @@
 					context: undefined,
 					name: undefined,
 					value: value
-				}
-				 : value;
+				} : value;
 			};
 		},
 		identifier: function (name, expensiveChecks, context, create, expression) {
@@ -15853,8 +15819,7 @@
 					var fn = regularWatch ? function regularInterceptedExpression(scope, locals, assign, inputs) {
 						var value = useInputs && inputs ? inputs[0] : parsedExpression(scope, locals, assign, inputs);
 						return interceptorFn(value, scope, locals);
-					}
-					 : function oneTimeInterceptedExpression(scope, locals, assign, inputs) {
+					} : function oneTimeInterceptedExpression(scope, locals, assign, inputs) {
 						var value = parsedExpression(scope, locals, assign, inputs);
 						var result = interceptorFn(value, scope, locals);
 						// we only return the interceptor's result if the
@@ -16509,8 +16474,7 @@
 					return function () {
 						cancelAnimationFrame(id);
 					};
-				}
-				 : function (fn) {
+				} : function (fn) {
 					var timer = $timeout(fn, 16.66, false); // 1000 / 60 = 16.666
 					return function () {
 						$timeout.cancel(timer);
@@ -28113,8 +28077,7 @@
 				var getTrackByValueFn = trackBy ?
 				function (value, locals) {
 					return trackByFn(scope, locals);
-				}
-				 :
+				} :
 				function getHashOfValue(value) {
 					return hashKey(value);
 				};
@@ -28132,8 +28095,7 @@
 					locals[keyName] = key;
 					locals[valueName] = value;
 					return locals;
-				}
-				 : function (value) {
+				} : function (value) {
 					locals[valueName] = value;
 					return locals;
 				};

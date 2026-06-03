@@ -418,8 +418,7 @@
 			H = {
 				apply: A.length ? function (e, t) {
 					q.apply(e, O.call(t))
-				}
-				 : function (e, t) {
+				} : function (e, t) {
 					var n = e.length,
 					r = 0;
 					while (e[n++] = t[r++]);
@@ -551,8 +550,7 @@
 					}
 				}), r.find.TAG = b.getElementsByTagName ? function (e, t) {
 				return typeof t.getElementsByTagName !== j ? t.getElementsByTagName(e) : undefined
-			}
-				 : function (e, t) {
+			} : function (e, t) {
 				var n,
 				r = [],
 				i = 0,
@@ -585,8 +583,7 @@
 				var n = 9 === e.nodeType ? e.documentElement : e,
 				r = t && t.parentNode;
 				return e === r || !(!r || 1 !== r.nodeType || !(n.contains ? n.contains(r) : e.compareDocumentPosition && 16 & e.compareDocumentPosition(r)))
-			}
-				 : function (e, t) {
+			} : function (e, t) {
 				if (t)
 					while (t = t.parentNode)
 						if (t === e)
@@ -597,8 +594,7 @@
 					return E = !0, 0;
 				var r = n.compareDocumentPosition && e.compareDocumentPosition && e.compareDocumentPosition(n);
 				return r ? 1 & r || !b.sortDetached && n.compareDocumentPosition(e) === r ? e === t || m(v, e) ? -1 : n === t || m(v, n) ? 1 : u ? F.call(u, e) - F.call(u, n) : 0 : 4 & r ? -1 : 1 : e.compareDocumentPosition ? -1 : 1
-			}
-				 : function (e, n) {
+			} : function (e, n) {
 				var r,
 				i = 0,
 				o = e.parentNode,
@@ -766,8 +762,7 @@
 					var t = e.replace(tt, nt).toLowerCase();
 					return "*" === e ? function () {
 						return !0
-					}
-					 : function (e) {
+					} : function (e) {
 						return e.nodeName && e.nodeName.toLowerCase() === t
 					}
 				},
@@ -789,8 +784,7 @@
 					a = "of-type" === t;
 					return 1 === r && 0 === i ? function (e) {
 						return !!e.parentNode
-					}
-					 : function (t, n, u) {
+					} : function (t, n, u) {
 						var l,
 						c,
 						f,
@@ -1030,8 +1024,7 @@
 				while (t = t[i])
 					if (1 === t.nodeType || o)
 						return e(t, n, r)
-			}
-			 : function (t, r, a) {
+			} : function (t, r, a) {
 				var u,
 				l,
 				c,
@@ -1057,8 +1050,7 @@
 					if (!e[i](t, n, r))
 						return !1;
 				return !0
-			}
-			 : e[0]
+			} : e[0]
 		}
 		function xt(e, t, n, r, i) {
 			var o,
@@ -1439,8 +1431,7 @@
 				a = o.getElementsByTagName("body")[0];
 				a && (n = o.createElement("div"), n.style.cssText = "border:0;width:0;height:0;position:absolute;top:0;left:-9999px;margin-top:1px", a.appendChild(n).appendChild(i), i.innerHTML = "", i.style.cssText = "-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:1px;border:1px;display:block;width:4px;margin-top:1%;position:absolute;top:1%", x.swap(a, null != a.style.zoom ? {
 						zoom: 1
-					}
-						 : {}, function () {
+					} : {}, function () {
 						t.boxSizing = 4 === i.offsetWidth
 					}), e.getComputedStyle && (t.pixelPosition = "1%" !== (e.getComputedStyle(i, null) || {}).top, t.boxSizingReliable = "4px" === (e.getComputedStyle(i, null) || {
 							width: "4px"
@@ -3482,8 +3473,7 @@
 					return function () {
 						t && (delete yn[o], t = s.onload = s.onerror = null, "abort" === e ? s.abort() : "error" === e ? r(s.status || 404, s.statusText) : r(gn[s.status] || s.status, s.statusText, "string" == typeof s.responseText ? {
 								text: s.responseText
-							}
-								 : undefined, s.getAllResponseHeaders()))
+							} : undefined, s.getAllResponseHeaders()))
 					}
 				},
 				s.onload = t(),
@@ -3494,8 +3484,7 @@
 			abort: function () {
 				t && t()
 			}
-		}
-		 : undefined
+		} : undefined
 	});
 	var vn,
 	xn,

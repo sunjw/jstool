@@ -1766,8 +1766,7 @@ YUI.add('yui-base', function (Y) {
 		function (a, f, o) {
 			Native.forEach.call(a || [], f, o || Y);
 			return Y;
-		}
-		 :
+		} :
 		function (a, f, o) {
 			var l = (a && a.length) || 0,
 			i;
@@ -1812,8 +1811,7 @@ YUI.add('yui-base', function (Y) {
 		YArray.indexOf = (Native.indexOf) ?
 		function (a, val) {
 			return Native.indexOf.call(a, val);
-		}
-		 :
+		} :
 		function (a, val) {
 			for (var i = 0; i < a.length; i = i + 1) {
 				if (a[i] === val) {
@@ -1850,8 +1848,7 @@ YUI.add('yui-base', function (Y) {
 		YArray.some = (Native.some) ?
 		function (a, f, o) {
 			return Native.some.call(a, f, o);
-		}
-		 :
+		} :
 		function (a, f, o) {
 			var l = a.length,
 			i;
@@ -3830,8 +3827,7 @@ YUI.add('yui-later', function (Y) {
 
 			f = !L.isUndefined(data) ? function () {
 				m.apply(o, Y.Array(data));
-			}
-			 : function () {
+			} : function () {
 				m.call(o);
 			};
 

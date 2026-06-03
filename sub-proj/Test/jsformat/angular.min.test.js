@@ -314,8 +314,7 @@ License: MIT
 		var d = 2 < arguments.length ? Aa.call(arguments, 2) : [];
 		return !D(b) || b instanceof RegExp ? b : d.length ? function () {
 			return arguments.length ? b.apply(a, cb(d, arguments, 0)) : b.apply(a, d)
-		}
-		 : function () {
+		} : function () {
 			return arguments.length ? b.apply(a, arguments) : b.call(a)
 		}
 	}
@@ -1279,8 +1278,7 @@ License: MIT
 			try {
 				return m.state
 			} catch (a) {}
-		}
-		 : E;
+		} : E;
 		g();
 		w = r;
 		k.url = function (b, d, e) {
@@ -1490,8 +1488,7 @@ License: MIT
 										var g = a.invoke(e);
 										D(g) ? g = {
 											compile: da(g)
-										}
-										 : !g.compile && g.link && (g.compile = da(g.link));
+										} : !g.compile && g.link && (g.compile = da(g.link));
 										g.priority = g.priority || 0;
 										g.index = f;
 										g.name = g.name || b;
@@ -1517,8 +1514,7 @@ License: MIT
 							$element: c,
 							$attrs: d
 						})
-					}
-					 : b
+					} : b
 				}
 				var f = b.template || b.templateUrl ? b.template : "";
 				return {
@@ -2393,21 +2389,17 @@ License: MIT
 					var c = a.data("$binding") || [];
 					M(b) ? c = c.concat(b) : c.push(b);
 					a.data("$binding", c)
-				}
-				 : E;
+				} : E;
 				ba.$$addBindingClass = n ? function (a) {
 					B(a, "ng-binding")
-				}
-				 : E;
+				} : E;
 				ba.$$addScopeInfo = n ? function (a, b, c, d) {
 					a.data(c ? d ? "$isolateScopeNoTemplate" : "$isolateScope" : "$scope",
 						b)
-				}
-				 : E;
+				} : E;
 				ba.$$addScopeClass = n ? function (a, b) {
 					B(a, b ? "ng-isolate-scope" : "ng-scope")
-				}
-				 : E;
+				} : E;
 				ba.$$createComment = function (a, b) {
 					var c = "";
 					n && (c = " " + (a || "") + ": " + (b || "") + " ");
@@ -3268,8 +3260,7 @@ License: MIT
 							a.push(c(b))
 						});
 						return e.apply(b, a)
-					}
-					 : function (a, b) {
+					} : function (a, b) {
 						e(a, null == b ? "" : b)
 					}
 				}
@@ -3608,8 +3599,7 @@ License: MIT
 					c = c !== l && c !== k ? function (c, e, f, g) {
 						f = d && g ? g[0] : a(c, e, f, g);
 						return b(f, c, e)
-					}
-					 : function (c, d, e, f) {
+					} : function (c, d, e, f) {
 						e = a(c, d, e, f);
 						c = b(e, c, d);
 						return A(e) ? c : e
@@ -3836,8 +3826,7 @@ License: MIT
 					return function () {
 						c(b)
 					}
-				}
-				 : function (a) {
+				} : function (a) {
 					var c = b(a, 16.66, !1);
 					return function () {
 						b.cancel(c)
@@ -5237,8 +5226,7 @@ License: MIT
 						mm: c.getMinutes(),
 						ss: c.getSeconds(),
 						sss: c.getMilliseconds() / 1E3
-					}
-				 : {
+					} : {
 					yyyy: 1970,
 					MM: 1,
 					dd: 1,
@@ -6575,8 +6563,7 @@ License: MIT
 				operator: a.text,
 				prefix: !0,
 				argument: this.unary()
-			}
-			 :
+			} :
 			this.primary()
 		},
 		primary: function () {
@@ -6584,8 +6571,7 @@ License: MIT
 			this.expect("(") ? (a = this.filterChain(), this.consume(")")) : this.expect("[") ? a = this.arrayDeclaration() : this.expect("{") ? a = this.object() : this.selfReferential.hasOwnProperty(this.peek().text) ? a = pa(this.selfReferential[this.consume().text]) : this.options.literals.hasOwnProperty(this.peek().text) ? a = {
 				type: s.Literal,
 				value: this.options.literals[this.consume().text]
-			}
-			 : this.peek().identifier ? a = this.identifier() : this.peek().constant ? a = this.constant() : this.throwError("not a primary expression",
+			} : this.peek().identifier ? a = this.identifier() : this.peek().constant ? a = this.constant() : this.throwError("not a primary expression",
 					this.peek());
 			for (var b; b = this.expect("(", "[", "."); )
 				"(" === b.text ? (a = {
@@ -6602,8 +6588,7 @@ License: MIT
 					object: a,
 					property: this.identifier(),
 					computed: !1
-				}
-			 : this.throwError("IMPOSSIBLE");
+				} : this.throwError("IMPOSSIBLE");
 			return a
 		},
 		filter: function (a) {
@@ -7180,10 +7165,8 @@ License: MIT
 						context: u,
 						name: u,
 						value: a
-					}
-					 : a
-				}
-				 : function (a, c, d, m) {
+					} : a
+				} : function (a, c, d, m) {
 					var n =
 						e(a, c, d, m),
 					p;
@@ -7197,8 +7180,7 @@ License: MIT
 					}
 					return b ? {
 						value: p
-					}
-					 : p
+					} : p
 				};
 			case s.AssignmentExpression:
 				return c = this.recurse(a.left, !0, 1),
@@ -7211,8 +7193,7 @@ License: MIT
 					n.context[n.name] = a;
 					return b ? {
 						value: a
-					}
-					 : a
+					} : a
 				};
 			case s.ArrayExpression:
 				return g = [],
@@ -7224,8 +7205,7 @@ License: MIT
 						f.push(g[p](a, c, d, e));
 					return b ? {
 						value: f
-					}
-					 : f
+					} : f
 				};
 			case s.ObjectExpression:
 				return g = [],
@@ -7240,30 +7220,26 @@ License: MIT
 						f[g[p].key] = g[p].value(a, c, d, e);
 					return b ? {
 						value: f
-					}
-					 : f
+					} : f
 				};
 			case s.ThisExpression:
 				return function (a) {
 					return b ? {
 						value: a
-					}
-					 : a
+					} : a
 				};
 			case s.LocalsExpression:
 				return function (a, c) {
 					return b ? {
 						value: c
-					}
-					 : c
+					} : c
 				};
 			case s.NGValueParameter:
 				return function (a,
 					c, d) {
 					return b ? {
 						value: d
-					}
-					 : d
+					} : d
 				}
 			}
 		},
@@ -7273,8 +7249,7 @@ License: MIT
 				d = A(d) ? +d : 0;
 				return b ? {
 					value: d
-				}
-				 : d
+				} : d
 			}
 		},
 		"unary-": function (a, b) {
@@ -7283,8 +7258,7 @@ License: MIT
 				d = A(d) ? -d : 0;
 				return b ? {
 					value: d
-				}
-				 : d
+				} : d
 			}
 		},
 		"unary!": function (a, b) {
@@ -7292,8 +7266,7 @@ License: MIT
 				d = !a(d, c, e, f);
 				return b ? {
 					value: d
-				}
-				 : d
+				} : d
 			}
 		},
 		"binary+": function (a, b, d) {
@@ -7303,8 +7276,7 @@ License: MIT
 				h = md(h, c);
 				return d ? {
 					value: h
-				}
-				 : h
+				} : h
 			}
 		},
 		"binary-": function (a, b, d) {
@@ -7314,8 +7286,7 @@ License: MIT
 				h = (A(h) ? h : 0) - (A(c) ? c : 0);
 				return d ? {
 					value: h
-				}
-				 : h
+				} : h
 			}
 		},
 		"binary*": function (a, b, d) {
@@ -7323,8 +7294,7 @@ License: MIT
 				c = a(c, e, f, g) * b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary/": function (a, b, d) {
@@ -7332,8 +7302,7 @@ License: MIT
 				c = a(c, e, f, g) / b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary%": function (a, b, d) {
@@ -7341,8 +7310,7 @@ License: MIT
 				c = a(c, e, f, g) % b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary===": function (a, b, d) {
@@ -7350,8 +7318,7 @@ License: MIT
 				c = a(c, e, f, g) === b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary!==": function (a, b, d) {
@@ -7360,8 +7327,7 @@ License: MIT
 						e, f, g) !== b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary==": function (a, b, d) {
@@ -7369,8 +7335,7 @@ License: MIT
 				c = a(c, e, f, g) == b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary!=": function (a, b, d) {
@@ -7378,8 +7343,7 @@ License: MIT
 				c = a(c, e, f, g) != b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary<": function (a, b, d) {
@@ -7387,8 +7351,7 @@ License: MIT
 				c = a(c, e, f, g) < b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary>": function (a, b, d) {
@@ -7396,8 +7359,7 @@ License: MIT
 				c = a(c, e, f, g) > b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary<=": function (a, b, d) {
@@ -7406,8 +7368,7 @@ License: MIT
 						g) <= b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary>=": function (a, b, d) {
@@ -7415,8 +7376,7 @@ License: MIT
 				c = a(c, e, f, g) >= b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary&&": function (a, b, d) {
@@ -7424,8 +7384,7 @@ License: MIT
 				c = a(c, e, f, g) && b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"binary||": function (a, b, d) {
@@ -7433,8 +7392,7 @@ License: MIT
 				c = a(c, e, f, g) || b(c, e, f, g);
 				return d ? {
 					value: c
-				}
-				 : c
+				} : c
 			}
 		},
 		"ternary?:": function (a, b, d, c) {
@@ -7442,8 +7400,7 @@ License: MIT
 				e = a(e, f, g, h) ? b(e, f, g, h) : d(e, f, g, h);
 				return c ? {
 					value: e
-				}
-				 : e
+				} : e
 			}
 		},
 		value: function (a, b) {
@@ -7452,8 +7409,7 @@ License: MIT
 					context: u,
 					name: u,
 					value: a
-				}
-				 : a
+				} : a
 			}
 		},
 		identifier: function (a, b, d, c, e) {
@@ -7466,8 +7422,7 @@ License: MIT
 					context: f,
 					name: a,
 					value: g
-				}
-				 : g
+				} : g
 			}
 		},
 		computedMember: function (a, b, d, c, e) {
@@ -7480,8 +7435,7 @@ License: MIT
 					context: l,
 					name: m,
 					value: n
-				}
-				 : n
+				} : n
 			}
 		},
 		nonComputedMember: function (a, b, d, c, e, f) {
@@ -7495,8 +7449,7 @@ License: MIT
 					context: g,
 					name: b,
 					value: h
-				}
-				 : h
+				} : h
 			}
 		},
 		inputs: function (a, b) {
@@ -7872,8 +7825,7 @@ License: MIT
 			compile: function (a, b) {
 				return Jg.test(b.ngValue) ? function (a, b, e) {
 					e.$set("value", a.$eval(e.ngValue))
-				}
-				 : function (a, b, e) {
+				} : function (a, b, e) {
 					a.$watch(e.ngValue, function (a) {
 						e.$set("value", a)
 					})
@@ -8436,8 +8388,7 @@ License: MIT
 				x = q && b(q),
 				r = q ? function (a, b) {
 					return x(d, b)
-				}
-				 : function (a) {
+				} : function (a) {
 					return Ha(a)
 				},
 				w = function (a,
@@ -8453,8 +8404,7 @@ License: MIT
 					C[p] = b;
 					C[n] = a;
 					return C
-				}
-				 : function (a) {
+				} : function (a) {
 					C[n] = a;
 					return C
 				};

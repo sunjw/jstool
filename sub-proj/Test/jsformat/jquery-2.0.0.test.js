@@ -1032,8 +1032,7 @@
 				// Leverage slice if possible
 				function (target, els) {
 					push_native.apply(target, slice.call(els));
-				}
-				 :
+				} :
 
 				// Support: IE<9
 				// Otherwise append directly
@@ -1338,8 +1337,7 @@
 				if (typeof context.getElementsByTagName !== strundefined) {
 					return context.getElementsByTagName(tag);
 				}
-			}
-			 :
+			} :
 			function (tag, context) {
 				var elem,
 				tmp = [],
@@ -1461,8 +1459,7 @@
 						adown.contains ?
 						adown.contains(bup) :
 						a.compareDocumentPosition && a.compareDocumentPosition(bup) & 16));
-			}
-			 :
+			} :
 			function (a, b) {
 				if (b) {
 					while ((b = b.parentNode)) {
@@ -1510,8 +1507,7 @@
 
 				// Not directly comparable, sort on existence of method
 				return a.compareDocumentPosition ? -1 : 1;
-			}
-			 :
+			} :
 			function (a, b) {
 				var cur,
 				i = 0,
@@ -1886,8 +1882,7 @@
 					return nodeNameSelector === "*" ?
 					function () {
 						return true;
-					}
-					 :
+					} :
 					function (elem) {
 						return elem.nodeName && elem.nodeName.toLowerCase() === nodeName;
 					};
@@ -1937,8 +1932,7 @@
 					// Shortcut for :nth-*(n)
 					function (elem) {
 						return !!elem.parentNode;
-					}
-					 :
+					} :
 
 					function (elem, context, xml) {
 						var cache,
@@ -2371,8 +2365,7 @@
 						return matcher(elem, context, xml);
 					}
 				}
-			}
-			 :
+			} :
 
 			// Check against all ancestor/preceding elements
 			function (elem, context, xml) {
@@ -2421,8 +2414,7 @@
 					}
 				}
 				return true;
-			}
-			 :
+			} :
 			matchers[0];
 		}
 
@@ -3284,8 +3276,7 @@
 			// with some non-1 values of body zoom, ticket #13543
 			jQuery.swap(body, body.style.zoom != null ? {
 				zoom: 1
-			}
-				 : {}, function () {
+			} : {}, function () {
 				support.boxSizing = div.offsetWidth === 4;
 			});
 
@@ -7945,8 +7936,7 @@
 										// on any attempt to access responseText
 										typeof xhr.responseText === "string" ? {
 										text: xhr.responseText
-									}
-										 : undefined,
+									} : undefined,
 										xhr.getAllResponseHeaders());
 								}
 							}

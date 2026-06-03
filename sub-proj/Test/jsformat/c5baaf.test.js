@@ -52,8 +52,7 @@
 	r.n = function (e) {
 		var t = e && e.__esModule ? function () {
 			return e.default
-		}
-		 : function () {
+		} : function () {
 			return e
 		};
 		return r.d(t, "a", t),
@@ -686,8 +685,7 @@
 										l = y(o, f ? {
 											header: p,
 											nlsBundle: f
-										}
-												 : null)
+										} : null)
 									} catch (e) {
 										console.error("Failed to load nls bundle", e),
 										l = y(o, null)
@@ -1024,8 +1022,7 @@
 								parentId: t
 							},
 							customProperties: new s(n)
-						}
-						 : null
+						} : null
 					},
 					e.runWithContext = function (t, r) {
 						e.enabled ? Zone.current.fork({
@@ -1817,16 +1814,14 @@
 							const e = l(r);
 							return e ? {
 								mimetype: e.mime
-							}
-							 : {
+							} : {
 								mimetype: "application/octet-stream"
 							}
 						}
 						return n ? {
 							mimetype: "text/plain",
 							encoding: n
-						}
-						 : {
+						} : {
 							mimetype: "text/plain"
 						}
 					}
@@ -2280,19 +2275,16 @@
 								name: t[1],
 								commit: t[2],
 								type: 0
-							}
-							 : (t = /^refs\/remotes\/([^/]+)\/([^ ]+) ([0-9a-f]{40})$/.exec(e)) ? {
+							} : (t = /^refs\/remotes\/([^/]+)\/([^ ]+) ([0-9a-f]{40})$/.exec(e)) ? {
 								name: `${t[1]}/${t[2]}`,
 								commit: t[3],
 								type: 1,
 								remote: t[1]
-							}
-							 : (t = /^refs\/tags\/([^ ]+) ([0-9a-f]{40})$/.exec(e)) ? {
+							} : (t = /^refs\/tags\/([^ ]+) ([0-9a-f]{40})$/.exec(e)) ? {
 								name: t[1],
 								commit: t[2],
 								type: 2
-							}
-							 : null
+							} : null
 						}).filter(e => !!e)
 					}
 					async getStashes() {
@@ -2900,12 +2892,10 @@
 					get decorations() {
 						const e = this._useIcons ? {
 							iconPath: this.getIconPath("light")
-						}
-						 : void 0,
+						} : void 0,
 						t = this._useIcons ? {
 							iconPath: this.getIconPath("dark")
-						}
-						 : void 0,
+						} : void 0,
 						r = this.tooltip;
 						return {
 							strikeThrough: this.strikeThrough,
@@ -3448,8 +3438,7 @@
 							if (t.all) {
 								const e = "tracked" === t.all ? {
 									update: !0
-								}
-								 : {};
+								} : {};
 								await this.repository.add([], e)
 							}
 							await this.repository.rebaseContinue()
@@ -3457,8 +3446,7 @@
 							if (t.all) {
 								const e = "tracked" === t.all ? {
 									update: !0
-								}
-								 : {};
+								} : {};
 								await this.repository.add([], e)
 							}
 							delete t.all,
@@ -6667,32 +6655,27 @@
 						}) ? {
 							ext: "ogv",
 							mime: "video/ogg"
-						}
-					 : r([1, 118, 105, 100, 101, 111, 0], {
+						} : r([1, 118, 105, 100, 101, 111, 0], {
 						offset: 28
 					}) ? {
 						ext: "ogm",
 						mime: "video/ogg"
-					}
-					 : r([127, 70, 76, 65, 67], {
+					} : r([127, 70, 76, 65, 67], {
 						offset: 28
 					}) ? {
 						ext: "oga",
 						mime: "audio/ogg"
-					}
-					 : r([83, 112, 101, 101, 120, 32, 32], {
+					} : r([83, 112, 101, 101, 120, 32, 32], {
 						offset: 28
 					}) ? {
 						ext: "spx",
 						mime: "audio/ogg"
-					}
-					 : r([1, 118, 111, 114, 98, 105, 115], {
+					} : r([1, 118, 111, 114, 98, 105, 115], {
 						offset: 28
 					}) ? {
 						ext: "ogg",
 						mime: "audio/ogg"
-					}
-					 : {
+					} : {
 						ext: "ogx",
 						mime: "application/ogg"
 					};
@@ -6910,8 +6893,7 @@
 					return r([70, 79, 82, 77, 0]) ? {
 						ext: "aif",
 						mime: "audio/aiff"
-					}
-					 : null
+					} : null
 				})
 			}, function (e, t) {
 				e.exports = require("util")
@@ -8318,28 +8300,22 @@
 								if (this._mGotData || (this._mBOM += t, "ï»¿" == this._mBOM.slice(0, 3) ? this.result = {
 											encoding: "UTF-8",
 											confidence: 1
-										}
-										 : "ÿþ\0\0" == this._mBOM.slice(0, 4) ? this.result = {
+										} : "ÿþ\0\0" == this._mBOM.slice(0, 4) ? this.result = {
 											encoding: "UTF-32LE",
 											confidence: 1
-										}
-										 : "\0\0þÿ" == this._mBOM.slice(0, 4) ? this.result = {
+										} : "\0\0þÿ" == this._mBOM.slice(0, 4) ? this.result = {
 											encoding: "UTF-32BE",
 											confidence: 1
-										}
-										 : "þÿ\0\0" == this._mBOM.slice(0, 4) ? this.result = {
+										} : "þÿ\0\0" == this._mBOM.slice(0, 4) ? this.result = {
 											encoding: "X-ISO-10646-UCS-4-3412",
 											confidence: 1
-										}
-										 : "\0\0ÿþ" == this._mBOM.slice(0, 4) ? this.result = {
+										} : "\0\0ÿþ" == this._mBOM.slice(0, 4) ? this.result = {
 											encoding: "X-ISO-10646-UCS-4-2143",
 											confidence: 1
-										}
-										 : "ÿþ" == this._mBOM.slice(0, 2) ? this.result = {
+										} : "ÿþ" == this._mBOM.slice(0, 2) ? this.result = {
 											encoding: "UTF-16LE",
 											confidence: 1
-										}
-										 : "þÿ" == this._mBOM.slice(0, 2) && (this.result = {
+										} : "þÿ" == this._mBOM.slice(0, 2) && (this.result = {
 												encoding: "UTF-16BE",
 												confidence: 1
 											}), this._mBOM.length > 3 && (this._mGotData = !0)), this.result.encoding && this.result.confidence > 0)
@@ -10685,8 +10661,7 @@
 						originalEndLineNumber: t.originalEndLineNumber,
 						modifiedStartLineNumber: i.start.line + 1,
 						modifiedEndLineNumber: i.end.line + 1
-					}
-					 : null
+					} : null
 				},
 				t.invertLineChange = function (e) {
 					return {
@@ -11021,8 +10996,7 @@
 							VSCODE_GIT_ASKPASS_NODE: process.execPath,
 							VSCODE_GIT_ASKPASS_MAIN: i.join(__dirname, "askpass-main.js"),
 							VSCODE_GIT_ASKPASS_HANDLE: await this.ipcHandlePathPromise
-						}
-						 : {
+						} : {
 							GIT_ASKPASS: i.join(__dirname, "askpass-empty.sh")
 						}
 					}
@@ -11290,8 +11264,7 @@
 					var e = Array.prototype.slice.call(arguments, 0);
 					e.unshift("SEMVER"),
 					console.log.apply(console, e)
-				}
-				 : function () {},
+				} : function () {},
 				t.SEMVER_SPEC_VERSION = "2.0.0";
 				var n = 256,
 				o = Number.MAX_SAFE_INTEGER || 9007199254740991,
@@ -12304,8 +12277,7 @@
 									}, s = l(s)) : (c.query.text = e, s ? s = l(s) : t = l(t)) : ("string" == typeof e.name ? c.query.plan = e.name : e.values instanceof Array ? c.query.preparable = {
 										text: e.text,
 										args: e.values
-									}
-									 : c.query.text = e.text, s ? s = l(s) : t ? t = l(t) : e.callback = l(e.callback))
+									} : c.query.text = e.text, s ? s = l(s) : t ? t = l(t) : e.callback = l(e.callback))
 							} catch (e) {
 								return r.apply(this, arguments)
 							}
@@ -13054,8 +13026,7 @@
 											}
 										}
 									return e.apply(this, [t, r])
-								}
-								 : e
+								} : e
 							}
 						});
 						var $ = t.current.fork({

@@ -633,8 +633,7 @@
 			return text == null ?
 			"" :
 			core_trim.call(text);
-		}
-		 :
+		} :
 
 		// Otherwise use our own trimming functionality
 		function (text) {
@@ -1146,8 +1145,7 @@
 								} else {
 									newDefer[action + "With"](this === deferred ? newDefer : this, [returned]);
 								}
-							}
-								 :
+							} :
 								newDefer[action]);
 						});
 						fns = null;
@@ -3318,8 +3316,7 @@
 		if (elem.removeEventListener) {
 			elem.removeEventListener(type, handle, false);
 		}
-	}
-	 :
+	} :
 	function (elem, type, handle) {
 		var name = "on" + type;
 
@@ -4099,13 +4096,11 @@
 			var adown = a.nodeType === 9 ? a.documentElement : a,
 			bup = b && b.parentNode;
 			return a === bup || !!(bup && bup.nodeType === 1 && adown.contains && adown.contains(bup));
-		}
-		 :
+		} :
 		docElem.compareDocumentPosition ?
 		function (a, b) {
 			return b && !!(a.compareDocumentPosition(b) & 16);
-		}
-		 :
+		} :
 		function (a, b) {
 			while ((b = b.parentNode)) {
 				if (b === a) {
@@ -4150,8 +4145,7 @@
 				(assertUsableClassName ? "|CLASS" : "")),
 
 			// IE6/7 return a modified href
-			attrHandle: assertHrefNotNormalized ? {}
-			 : {
+			attrHandle: assertHrefNotNormalized ? {} : {
 				"href": function (elem) {
 					return elem.getAttribute("href", 2);
 				},
@@ -4169,8 +4163,7 @@
 						// nodes that are no longer in the document #6963
 						return m && m.parentNode ? [m] : [];
 					}
-				}
-				 :
+				} :
 				function (id, context, xml) {
 					if (typeof context.getElementById !== strundefined && !xml) {
 						var m = context.getElementById(id);
@@ -4188,8 +4181,7 @@
 					if (typeof context.getElementsByTagName !== strundefined) {
 						return context.getElementsByTagName(tag);
 					}
-				}
-				 :
+				} :
 				function (tag, context) {
 					var results = context.getElementsByTagName(tag);
 
@@ -4321,8 +4313,7 @@
 					return function (elem) {
 						return elem.getAttribute("id") === id;
 					};
-				}
-				 :
+				} :
 				function (id) {
 					id = id.replace(rbackslash, "");
 					return function (elem) {
@@ -4673,8 +4664,7 @@
 			return (!a.compareDocumentPosition || !b.compareDocumentPosition ?
 				a.compareDocumentPosition :
 				a.compareDocumentPosition(b) & 4) ? -1 : 1;
-		}
-		 :
+		} :
 		function (a, b) {
 			// The nodes are identical, we can exit early
 			if (a === b) {
@@ -4876,8 +4866,7 @@
 						return matcher(elem) && elem;
 					}
 				}
-			}
-			 :
+			} :
 			xml ?
 			function (elem) {
 				while ((elem = elem[dir])) {
@@ -4887,8 +4876,7 @@
 						}
 					}
 				}
-			}
-			 :
+			} :
 			function (elem) {
 				var cache,
 				dirkey = doneName + "." + dirruns,
@@ -4919,8 +4907,7 @@
 			function (elem) {
 				var result = deeper(elem);
 				return result && higher(result === true ? elem : result);
-			}
-			 :
+			} :
 			deeper;
 		}
 
@@ -8407,8 +8394,7 @@
 		for (var key in xhrCallbacks) {
 			xhrCallbacks[key](0, 1);
 		}
-	}
-	 : false,
+	} : false,
 	xhrId = 0;
 
 	// Functions to create xhrs
@@ -8435,8 +8421,7 @@
 		 */
 	function () {
 		return !this.isLocal && createStandardXHR() || createActiveXHR();
-	}
-	 :
+	} :
 	// For all other browsers, use the standard XMLHttpRequest object
 	createStandardXHR;
 
@@ -9445,8 +9430,7 @@
 			parentOffset = rroot.test(offsetParent[0].nodeName) ? {
 				top: 0,
 				left: 0
-			}
-			 : offsetParent.offset();
+			} : offsetParent.offset();
 
 			// Subtract element margins
 			// note: when an element has margin: auto the offsetLeft and marginLeft

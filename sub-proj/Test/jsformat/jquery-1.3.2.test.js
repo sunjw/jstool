@@ -1510,8 +1510,7 @@
 				var ret = seed ? {
 					expr: parts.pop(),
 					set: makeArray(seed)
-				}
-				 :
+				} :
 				Sizzle.find(parts.pop(), parts.length === 1 && context.parentNode ? context.parentNode : context, isXML(context));
 				set = Sizzle.filter(ret.expr, ret.set);
 
@@ -2402,8 +2401,7 @@
 
 		var contains = document.compareDocumentPosition ? function (a, b) {
 			return a.compareDocumentPosition(b) & 16;
-		}
-		 : function (a, b) {
+		} : function (a, b) {
 			return a !== b && (a.contains ? a.contains(b) : true);
 		};
 
@@ -3072,8 +3070,7 @@
 		die: function (type, fn) {
 			jQuery(document).unbind(liveConvert(type, this.selector), fn ? {
 				guid: fn.guid + this.selector + type
-			}
-				 : null);
+			} : null);
 			return this;
 		}
 	});
@@ -4443,8 +4440,7 @@
 				parentOffset = /^body|html$/i.test(offsetParent[0].tagName) ? {
 					top: 0,
 					left: 0
-				}
-				 : offsetParent.offset();
+				} : offsetParent.offset();
 
 				// Subtract element margins
 				// note: when an element has margin: auto the offsetLeft and marginLeft

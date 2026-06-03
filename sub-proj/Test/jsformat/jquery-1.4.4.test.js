@@ -667,8 +667,7 @@
 				return text == null ?
 				"" :
 				trim.call(text);
-			}
-			 :
+			} :
 
 			// Otherwise use our own trimming functionality
 			function (text) {
@@ -2416,8 +2415,7 @@
 		if (elem.removeEventListener) {
 			elem.removeEventListener(type, handle, false);
 		}
-	}
-	 :
+	} :
 	function (elem, type, handle) {
 		if (elem.detachEvent) {
 			elem.detachEvent("on" + type, handle);
@@ -3166,8 +3164,7 @@
 					ret = seed ? {
 						expr: parts.pop(),
 						set: makeArray(seed)
-					}
-					 :
+					} :
 					Sizzle.find(parts.pop(), parts.length === 1 && (parts[0] === "~" || parts[0] === "+") && context.parentNode ? context.parentNode : context, contextXML);
 
 					set = ret.expr ?
@@ -7182,8 +7179,7 @@
 			parentOffset = rroot.test(offsetParent[0].nodeName) ? {
 				top: 0,
 				left: 0
-			}
-			 : offsetParent.offset();
+			} : offsetParent.offset();
 
 			// Subtract element margins
 			// note: when an element has margin: auto the offsetLeft and marginLeft

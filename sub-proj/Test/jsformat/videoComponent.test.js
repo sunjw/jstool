@@ -112,14 +112,12 @@ var _l = "", _m3u8 = {};
 	},
 	f = e.btoa ? function (t) {
 		return e.btoa(t)
-	}
-	 : function (e) {
+	} : function (e) {
 		return e.replace(/[\s\S]{1,3}/g, l)
 	},
 	c = t ? function (e) {
 		return (e.constructor === t.constructor ? e : new t(e)).toString("base64")
-	}
-	 : function (e) {
+	} : function (e) {
 		return f(d(e))
 	},
 	h = function (e, t) {
@@ -156,14 +154,12 @@ var _l = "", _m3u8 = {};
 	},
 	b = e.atob ? function (t) {
 		return e.atob(t)
-	}
-	 : function (e) {
+	} : function (e) {
 		return e.replace(/[\s\S]{1,4}/g, v)
 	},
 	_ = t ? function (e) {
 		return (e.constructor === t.constructor ? e : new t(e, "base64")).toString()
-	}
-	 : function (e) {
+	} : function (e) {
 		return y(b(e))
 	},
 	T = function (e) {
@@ -372,8 +368,7 @@ var _l = "", _m3u8 = {};
 							bytes: n.buffer,
 							byteOffset: n.byteOffset,
 							byteLength: n.byteLength
-						}
-						 : t[i] = n
+						} : t[i] = n
 					}),
 					t
 				},
@@ -1031,8 +1026,7 @@ var _l = "", _m3u8 = {};
 								}, {
 									key: "blacklistCurrentPlaylist",
 									value: function () {
-										var e = arguments.length <= 0 || void 0 === arguments[0] ? {}
-										 : arguments[0],
+										var e = arguments.length <= 0 || void 0 === arguments[0] ? {} : arguments[0],
 										t = void 0,
 										i = void 0;
 										if (t = e.playlist || this.masterPlaylistLoader_.media(), !t)
@@ -1235,20 +1229,17 @@ var _l = "", _m3u8 = {};
 							message: "HLS request timed-out at URL: " + t.uri,
 							code: REQUEST_ERRORS.TIMEOUT,
 							xhr: t
-						}
-						 : t.aborted ? {
+						} : t.aborted ? {
 							status: t.status,
 							message: "HLS request aborted at URL: " + t.uri,
 							code: REQUEST_ERRORS.ABORTED,
 							xhr: t
-						}
-						 : e ? {
+						} : e ? {
 							status: t.status,
 							message: "HLS request errored at URL: " + t.uri,
 							code: REQUEST_ERRORS.FAILURE,
 							xhr: t
-						}
-						 : null
+						} : null
 					},
 					handleKeyResponse = function handleKeyResponse(segment, finishProcessingFn) {
 						return function (error, request) {
@@ -2166,8 +2157,7 @@ var _l = "", _m3u8 = {};
 						for (var t = e.syncInfo || (e.endList ? {
 								time: 0,
 								mediaSequence: 0
-							}
-									 : null), i = null, n = 0, r = e.segments.length; n < r; n++) {
+							} : null), i = null, n = 0, r = e.segments.length; n < r; n++) {
 							var a = e.segments[n];
 							if ("undefined" != typeof a.start) {
 								i = {
@@ -2809,8 +2799,7 @@ var _l = "", _m3u8 = {};
 								}, {
 									key: "playlist",
 									value: function (e) {
-										var t = arguments.length <= 1 || void 0 === arguments[1] ? {}
-										 : arguments[1];
+										var t = arguments.length <= 1 || void 0 === arguments[1] ? {} : arguments[1];
 										if (e) {
 											var i = this.playlist_,
 											n = this.pendingSegment_;
@@ -3627,8 +3616,7 @@ var _l = "", _m3u8 = {};
 												(!this.discontinuities[a] || this.discontinuities[a].accuracy > o) && (s < 0 ? this.discontinuities[a] = {
 														time: i.start - (0, f.sumDurations)(t, e.mediaIndex, r),
 														accuracy: o
-													}
-													 : this.discontinuities[a] = {
+													} : this.discontinuities[a] = {
 														time: i.end + (0, f.sumDurations)(t, e.mediaIndex + 1, r),
 														accuracy: o
 													})

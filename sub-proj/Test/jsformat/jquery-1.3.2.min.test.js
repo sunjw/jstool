@@ -1069,8 +1069,7 @@
 				var ae = ac ? {
 					expr: Z.pop(),
 					set: E(ac)
-				}
-				 : F.find(Z.pop(), Z.length === 1 && U.parentNode ? U.parentNode : U, Q(U));
+				} : F.find(Z.pop(), Z.length === 1 && U.parentNode ? U.parentNode : U, Q(U));
 				af = F.filter(ae.expr, ae.set);
 				if (Z.length > 0) {
 					ai = E(af)
@@ -1815,8 +1814,7 @@
 		}
 		var K = document.compareDocumentPosition ? function (U, T) {
 			return U.compareDocumentPosition(T) & 16
-		}
-		 : function (U, T) {
+		} : function (U, T) {
 			return U !== T && (U.contains ? U.contains(T) : true)
 		};
 		var Q = function (T) {
@@ -2298,8 +2296,7 @@
 		die: function (F, E) {
 			o(document).unbind(i(F, this.selector), E ? {
 				guid: E.guid + this.selector + F
-			}
-				 : null);
+			} : null);
 			return this
 		}
 	});
@@ -3299,8 +3296,7 @@
 				E = /^body|html$/i.test(G[0].tagName) ? {
 					top: 0,
 					left: 0
-				}
-				 : G.offset();
+				} : G.offset();
 				J.top -= j(this, "marginTop");
 				J.left -= j(this, "marginLeft");
 				E.top += j(G, "borderTopWidth");

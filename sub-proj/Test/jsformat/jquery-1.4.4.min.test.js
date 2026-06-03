@@ -544,8 +544,7 @@
 			},
 			trim: O ? function (j) {
 				return j == null ? "" : O.call(j)
-			}
-			 : function (j) {
+			} : function (j) {
 				return j == null ? "" : j.toString().replace(k, "").replace(o, "")
 			},
 			makeArray: function (j, s) {
@@ -1504,8 +1503,7 @@
 	};
 	c.removeEvent = t.removeEventListener ? function (a, b, d) {
 		a.removeEventListener && a.removeEventListener(b, d, false)
-	}
-	 : function (a, b, d) {
+	} : function (a, b, d) {
 		a.detachEvent && a.detachEvent("on" + b, d)
 	};
 	c.Event = function (a) {
@@ -1954,8 +1952,7 @@
 					q = m ? {
 						expr: D.pop(),
 						set: C(m)
-					}
-					 : k.find(D.pop(), D.length === 1 && (D[0] === "~" || D[0] === "+") && i.parentNode ? i.parentNode : i, O);
+					} : k.find(D.pop(), D.length === 1 && (D[0] === "~" || D[0] === "+") && i.parentNode ? i.parentNode : i, O);
 					u = q.expr ? k.filter(q.expr,
 							q.set) : q.set;
 					if (D.length > 0)
@@ -2625,12 +2622,10 @@
 		})();
 		k.contains = t.documentElement.contains ? function (g, i) {
 			return g !== i && (g.contains ? g.contains(i) : true)
-		}
-		 : t.documentElement.compareDocumentPosition ?
+		} : t.documentElement.compareDocumentPosition ?
 		function (g, i) {
 			return !!(g.compareDocumentPosition(i) & 16)
-		}
-		 : function () {
+		} : function () {
 			return false
 		};
 		k.isXML = function (g) {
@@ -3043,8 +3038,7 @@
 				e = l && l.parentNode;
 				e = c.support.parentNode && e && e.nodeType === 11 && e.childNodes.length === this.length ? {
 					fragment: e
-				}
-				 : c.buildFragment(a, this, k);
+				} : c.buildFragment(a, this, k);
 				h = e.fragment;
 				if (f = h.childNodes.length === 1 ? h = h.firstChild : h.firstChild) {
 					b = b && c.nodeName(f, "tr");
@@ -4048,8 +4042,7 @@
 				h.scrollTop || b.scrollTop) - (h.clientTop || b.clientTop || 0),
 			left: d.left + (f.pageXOffset || c.support.boxModel && h.scrollLeft || b.scrollLeft) - (h.clientLeft || b.clientLeft || 0)
 		}
-	}
-	 : function (a) {
+	} : function (a) {
 		var b = this[0];
 		if (a)
 			return this.each(function (x) {
@@ -4187,8 +4180,7 @@
 			e = Ia.test(b[0].nodeName) ? {
 				top: 0,
 				left: 0
-			}
-			 : b.offset();
+			} : b.offset();
 			d.top -= parseFloat(c.css(a, "marginTop")) || 0;
 			d.left -= parseFloat(c.css(a, "marginLeft")) || 0;
 			e.top += parseFloat(c.css(b[0], "borderTopWidth")) || 0;

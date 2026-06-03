@@ -1083,8 +1083,7 @@
 			a.contentType = "application/x-www-form-urlencoded";
 			a.data = a.data ? {
 				model: a.data
-			}
-			 : {}
+			} : {}
 		}
 		if (n.emulateHTTP && (s === "PUT" || s === "DELETE" || s === "PATCH")) {
 			a.type = "POST";
