@@ -122,6 +122,7 @@ class RealJSFormatter extends JSParser.JSParser {
         this.m_brcNeedStack = []; // () after if
 
         this.m_QuestOperStackCount = [];
+        this.m_QuestOperIndentStack = [];
 
         // Init();
         // format option
@@ -761,14 +762,46 @@ class RealJSFormatter extends JSParser.JSParser {
         if (this.m_tokenA.code == "?") {
             ++this.m_nQuestOperCount;
             this.m_QuestOperStackCount.push(this.m_blockStack.length);
+            this.m_QuestOperIndentStack.push(this.m_nIndents);
         }
 
         if (this.m_tokenA.code == ":") {
             if (this.m_nQuestOperCount > 0 &&
                 (JSParser.GetStackTop(this.m_QuestOperStackCount) >= this.m_blockStack.length ||
                     JSParser.StackTopEq(this.m_blockStack, JSParser.JS_ASSIGN))) {
+                let questIndent = this.m_nIndents;
+                if (this.m_QuestOperIndentStack.length > 0) {
+                    questIndent = JSParser.GetStackTop(this.m_QuestOperIndentStack);
+                }
+
+                if (this.m_bNewLine && this.m_nIndents > questIndent) {
+                    this.m_nIndents = questIndent;
+                }
+
+                // For ternary branches ending with a block literal/function,
+                // keep ':' on the same visual line to avoid a dangling ':' line.
+                let lineTrim = TrimRightSpace(this.m_lineBuffer);
+                let joinWithPrevious = this.m_bNewLine && lineTrim.length > 0 &&
+                    lineTrim.charAt(lineTrim.length - 1) == '}';
+
                 --this.m_nQuestOperCount;
                 this.m_QuestOperStackCount.pop();
+                if (this.m_QuestOperIndentStack.length > 0) {
+                    this.m_QuestOperIndentStack.pop();
+                }
+
+                if (joinWithPrevious) {
+                    this.m_bNewLine = false;
+                    let leftPad = " ";
+                    if (this.m_lineBuffer.length > 0) {
+                        let lineLastChar = this.m_lineBuffer.charAt(this.m_lineBuffer.length - 1);
+                        if (lineLastChar == ' ' || lineLastChar == '\t') {
+                            leftPad = "";
+                        }
+                    }
+                    this.PutToken(this.m_tokenA, leftPad, " ");
+                    return;
+                }
             } else {
                 this.PutToken(this.m_tokenA, "", " ");
                 return;
