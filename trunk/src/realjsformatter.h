@@ -101,6 +101,7 @@ private:
 
 	int m_nQuestOperCount;
 	SizeStack m_QuestOperStackCount;
+	IntStack m_QuestOperIndentStack;
 
 	string m_initIndent; // ÆðÊ¼Ëõ½ø
 

@@ -1020,6 +1020,7 @@ void RealJSFormatter::ProcessOper(bool bHaveNewLine, char tokenAFirst, char toke
 	{
 		++m_nQuestOperCount;
 		m_QuestOperStackCount.push(m_blockStack.size());
+		m_QuestOperIndentStack.push(m_nIndents);
 	}
 
 	if (m_tokenA.code == ":")
@@ -1028,8 +1029,43 @@ void RealJSFormatter::ProcessOper(bool bHaveNewLine, char tokenAFirst, char toke
 			(m_QuestOperStackCount.top() >= m_blockStack.size() ||
 			StackTopEq(m_blockStack, JS_ASSIGN)))
 		{
+			int questIndent = m_nIndents;
+			if (m_QuestOperIndentStack.size() > 0)
+			{
+				questIndent = m_QuestOperIndentStack.top();
+			}
+
+			if (m_bNewLine && m_nIndents > questIndent)
+			{
+				m_nIndents = questIndent;
+			}
+
+			string lineTrim = TrimRightSpace(m_lineBuffer);
+			bool joinWithPrevious = m_bNewLine && lineTrim.length() > 0 &&
+				lineTrim[lineTrim.length() - 1] == '}';
+
 			--m_nQuestOperCount;
 			m_QuestOperStackCount.pop();
+			if (m_QuestOperIndentStack.size() > 0)
+			{
+				m_QuestOperIndentStack.pop();
+			}
+
+			if (joinWithPrevious)
+			{
+				m_bNewLine = false;
+				string leftPad(" ");
+				if (m_lineBuffer.length() > 0)
+				{
+					char lineLastChar = m_lineBuffer[m_lineBuffer.length() - 1];
+					if (lineLastChar == ' ' || lineLastChar == '\t')
+					{
+						leftPad = "";
+					}
+				}
+				PutToken(m_tokenA, leftPad, string(" "));
+				return;
+			}
 		}
 		else
 		{
