@@ -199,7 +199,7 @@ std::string sunjwbase::wstrtostr(const std::wstring& wstr)
 	return _wstrtostr(wstr, CP_ACP);
 #endif
 #if defined (__APPLE__) || defined (__unix)
-	return _wstrtostr(wstr);
+	return striconv(_wstrtostr(wstr), "UTF-8", "WCHAR_T");
 #endif
 }
 
@@ -210,7 +210,7 @@ std::wstring sunjwbase::strtowstr(const std::string& str)
 	return _strtowstr(str, CP_ACP);
 #endif
 #if defined (__APPLE__) || defined (__unix)
-	return _strtowstr(str);
+	return _strtowstr(striconv(str, "WCHAR_T", "UTF-8"));
 #endif
 }
 
@@ -251,12 +251,7 @@ std::string sunjwbase::asciiconvjson(std::string& strJsonUtf16)
 		wstrTemp += (wchar_t)(unsigned char)strJsonUtf16[i];
 	}
 
-#if defined (_WIN32)
 	return sunjwbase::wstrtostr(wstrTemp);
-#endif
-#if defined (__APPLE__) || defined (__unix)
-	return sunjwbase::wstrtostrutf8(wstrTemp);
-#endif
 }
 
 std::string sunjwbase::strtrim_right(const std::string& s, const std::string& spaces)
@@ -301,6 +296,11 @@ std::wstring sunjwbase::strtrim_left(const std::wstring& s, const std::wstring& 
 
 std::string sunjwbase::strreplace(const std::string& base, const std::string& src, const std::string& des)
 {
+	if (src.empty())
+	{
+		return base;
+	}
+
 	std::string ret(base);
 	std::string::size_type pos = 0;
 	std::string::size_type srcLen = src.size();
@@ -317,6 +317,11 @@ std::string sunjwbase::strreplace(const std::string& base, const std::string& sr
 
 std::wstring sunjwbase::strreplace(const std::wstring& base, const std::wstring& src, const std::wstring& des)
 {
+	if (src.empty())
+	{
+		return base;
+	}
+
 	std::wstring ret(base);
 	std::wstring::size_type pos = 0;
 	std::wstring::size_type srcLen = src.size();
@@ -415,6 +420,35 @@ std::string sunjwbase::strappendformat(std::string& str, const char *format, ...
 		int n = vsnprintf_s((char *)temp.data(), size, _TRUNCATE, format, vl);
 #else
 		int n = vsnprintf((char *)temp.data(), size, format, vl);
+#endif
+		va_end(vl);
+		if (n > -1 && n < size) {
+			// temp.resize(n);
+			break;
+		}
+		if (n > -1)
+			size = n + 1; // not large enough
+		else
+			size *= 2;
+	}
+	str.append(temp.c_str());
+
+	return str;
+}
+
+std::wstring sunjwbase::strappendformat(std::wstring& str, const wchar_t *format, ...)
+{
+	int size = 100;
+	std::wstring temp;
+	va_list vl;
+	while (1)
+	{
+		temp.resize(size + 1); // for null terminator
+		va_start(vl, format);
+#if defined (_WIN32)
+		int n = _vsnwprintf_s((wchar_t *)temp.data(), size, _TRUNCATE, format, vl);
+#else
+		int n = vswprintf((wchar_t *)temp.data(), size, format, vl);
 #endif
 		va_end(vl);
 		if (n > -1 && n < size) {
