@@ -32,14 +32,14 @@
 		41C595D82FCED74D0099F3CC /* jsonFileProc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonFileProc.h; path = src/jsonFileProc.h; sourceTree = "<group>"; };
 		41C595D92FCED74D0099F3CC /* jsonFileProc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonFileProc.cpp; path = src/jsonFileProc.cpp; sourceTree = "<group>"; };
 		41C595DA2FCED74D0099F3CC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
-		41C595DF2FCED8050099F3CC /* jsonpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonpp.h; path = ../../trunk/src/jsonpp.h; sourceTree = "<group>"; };
-		41C595E02FCED8E60099F3CC /* jsonparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonparser.h; path = ../../trunk/src/jsonparser.h; sourceTree = "<group>"; };
-		41C595E12FCED9F80099F3CC /* jsonparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonparser.cpp; path = ../../trunk/src/jsonparser.cpp; sourceTree = "<group>"; };
-		41C595E32FCEDA3A0099F3CC /* jsparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../trunk/src/jsparser.h; sourceTree = "<group>"; };
-		41C595E42FCEDA560099F3CC /* jsparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../trunk/src/jsparser.cpp; sourceTree = "<group>"; };
-		41C595E62FCEDADE0099F3CC /* jsonValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonValue.cpp; path = ../../trunk/src/jsonValue.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		41C595E82FCEDBBF0099F3CC /* strhelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strhelper.h; path = ../../trunk/src/strhelper.h; sourceTree = "<group>"; };
-		41C595E92FCEDBD10099F3CC /* strhelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = strhelper.cpp; path = ../../trunk/src/strhelper.cpp; sourceTree = "<group>"; };
+		41C595DF2FCED8050099F3CC /* jsonpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonpp.h; path = ../../JSToolNpp/src/jsonpp.h; sourceTree = "<group>"; };
+		41C595E02FCED8E60099F3CC /* jsonparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsonparser.h; path = ../../JSToolNpp/src/jsonparser.h; sourceTree = "<group>"; };
+		41C595E12FCED9F80099F3CC /* jsonparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonparser.cpp; path = ../../JSToolNpp/src/jsonparser.cpp; sourceTree = "<group>"; };
+		41C595E32FCEDA3A0099F3CC /* jsparser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../JSToolNpp/src/jsparser.h; sourceTree = "<group>"; };
+		41C595E42FCEDA560099F3CC /* jsparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../JSToolNpp/src/jsparser.cpp; sourceTree = "<group>"; };
+		41C595E62FCEDADE0099F3CC /* jsonValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jsonValue.cpp; path = ../../JSToolNpp/src/jsonValue.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		41C595E82FCEDBBF0099F3CC /* strhelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strhelper.h; path = ../../JSToolNpp/src/strhelper.h; sourceTree = "<group>"; };
+		41C595E92FCEDBD10099F3CC /* strhelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = strhelper.cpp; path = ../../JSToolNpp/src/strhelper.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

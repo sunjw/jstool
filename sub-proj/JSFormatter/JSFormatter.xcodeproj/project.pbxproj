@@ -21,18 +21,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4102C6991D75D1A00008E61C /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../../trunk/src/version.h; sourceTree = "<group>"; };
+		4102C6991D75D1A00008E61C /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../../JSToolNpp/src/version.h; sourceTree = "<group>"; };
 		416F583B1BA8477D0086D6D5 /* libJSFormatter.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libJSFormatter.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		416F58441BA849AA0086D6D5 /* jsfGenericIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsfGenericIO.h; path = ../../trunk/src/jsfGenericIO.h; sourceTree = "<group>"; usesTabs = 1; };
-		416F58451BA849AA0086D6D5 /* jsformatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsformatter.h; path = ../../trunk/src/jsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
-		416F58461BA849AA0086D6D5 /* jsparser.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../trunk/src/jsparser.h; sourceTree = "<group>"; usesTabs = 1; };
-		416F58471BA849AA0086D6D5 /* realjsformatter.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; name = realjsformatter.h; path = ../../trunk/src/realjsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
-		416F584C1BA849CE0086D6D5 /* jsfGenericIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsfGenericIO.cpp; path = ../../trunk/src/jsfGenericIO.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		416F584D1BA849CE0086D6D5 /* jsformatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsformatter.cpp; path = ../../trunk/src/jsformatter.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		416F584E1BA849CE0086D6D5 /* jsparser.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../trunk/src/jsparser.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		416F584F1BA849CE0086D6D5 /* realjsformatter.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = realjsformatter.cpp; path = ../../trunk/src/realjsformatter.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		41F6C8D21E7A2BC60096D29C /* jsfStringIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsfStringIO.h; path = ../../trunk/src/jsfStringIO.h; sourceTree = "<group>"; };
-		41F6C8D41E7A2BD50096D29C /* jsfStringIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsfStringIO.cpp; path = ../../trunk/src/jsfStringIO.cpp; sourceTree = "<group>"; };
+		416F58441BA849AA0086D6D5 /* jsfGenericIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsfGenericIO.h; path = ../../JSToolNpp/src/jsfGenericIO.h; sourceTree = "<group>"; usesTabs = 1; };
+		416F58451BA849AA0086D6D5 /* jsformatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsformatter.h; path = ../../JSToolNpp/src/jsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
+		416F58461BA849AA0086D6D5 /* jsparser.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; name = jsparser.h; path = ../../JSToolNpp/src/jsparser.h; sourceTree = "<group>"; usesTabs = 1; };
+		416F58471BA849AA0086D6D5 /* realjsformatter.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; name = realjsformatter.h; path = ../../JSToolNpp/src/realjsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
+		416F584C1BA849CE0086D6D5 /* jsfGenericIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsfGenericIO.cpp; path = ../../JSToolNpp/src/jsfGenericIO.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		416F584D1BA849CE0086D6D5 /* jsformatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsformatter.cpp; path = ../../JSToolNpp/src/jsformatter.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		416F584E1BA849CE0086D6D5 /* jsparser.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = jsparser.cpp; path = ../../JSToolNpp/src/jsparser.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		416F584F1BA849CE0086D6D5 /* realjsformatter.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = realjsformatter.cpp; path = ../../JSToolNpp/src/realjsformatter.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		41F6C8D21E7A2BC60096D29C /* jsfStringIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsfStringIO.h; path = ../../JSToolNpp/src/jsfStringIO.h; sourceTree = "<group>"; };
+		41F6C8D41E7A2BD50096D29C /* jsfStringIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsfStringIO.cpp; path = ../../JSToolNpp/src/jsfStringIO.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

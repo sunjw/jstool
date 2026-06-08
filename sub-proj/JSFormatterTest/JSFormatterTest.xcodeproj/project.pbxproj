@@ -25,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		416F585D1BA84C6F0086D6D5 /* JSFormatterTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSFormatterTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		416F58691BA84D860086D6D5 /* jsformatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsformatter.h; path = ../../trunk/src/jsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
+		416F58691BA84D860086D6D5 /* jsformatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsformatter.h; path = ../../JSToolNpp/src/jsformatter.h; sourceTree = "<group>"; usesTabs = 1; };
 		416F586A1BA84D8C0086D6D5 /* JSFormatterConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; name = JSFormatterConsole.cpp; path = src/JSFormatterConsole.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		416F586F1BA84E9E0086D6D5 /* libJSFormatter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libJSFormatter.dylib; path = ../../trunk/DerivedData/JSTool/Build/Products/Release/libJSFormatter.dylib; sourceTree = "<group>"; };
+		416F586F1BA84E9E0086D6D5 /* libJSFormatter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libJSFormatter.dylib; path = ../../JSToolNpp/DerivedData/JSTool/Build/Products/Release/libJSFormatter.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
