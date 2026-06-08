@@ -133,7 +133,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -158,7 +158,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -182,7 +182,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -200,7 +200,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -224,7 +224,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -247,7 +247,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>..\..\trunk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\JSToolNpp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -259,19 +259,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\trunk\src\jsfGenericIO.cpp" />
-    <ClCompile Include="..\..\trunk\src\jsformatter.cpp" />
-    <ClCompile Include="..\..\trunk\src\jsfStringIO.cpp" />
-    <ClCompile Include="..\..\trunk\src\jsparser.cpp" />
-    <ClCompile Include="..\..\trunk\src\realjsformatter.cpp" />
+    <ClCompile Include="..\..\JSToolNpp\src\jsfGenericIO.cpp" />
+    <ClCompile Include="..\..\JSToolNpp\src\jsformatter.cpp" />
+    <ClCompile Include="..\..\JSToolNpp\src\jsfStringIO.cpp" />
+    <ClCompile Include="..\..\JSToolNpp\src\jsparser.cpp" />
+    <ClCompile Include="..\..\JSToolNpp\src\realjsformatter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\trunk\src\jsfGenericIO.h" />
-    <ClInclude Include="..\..\trunk\src\jsformatter.h" />
-    <ClInclude Include="..\..\trunk\src\jsfStringIO.h" />
-    <ClInclude Include="..\..\trunk\src\jsparser.h" />
-    <ClInclude Include="..\..\trunk\src\realjsformatter.h" />
-    <ClInclude Include="..\..\trunk\src\version.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\jsfGenericIO.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\jsformatter.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\jsfStringIO.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\jsparser.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\realjsformatter.h" />
+    <ClInclude Include="..\..\JSToolNpp\src\version.h" />
     <ClInclude Include="src\resource.h" />
   </ItemGroup>
   <ItemGroup>
