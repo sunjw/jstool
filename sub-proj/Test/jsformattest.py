@@ -21,7 +21,7 @@ JSFORMATTER_PATH_WIN_ARM64 = '../../trunk/arm64/debug/JSFormatterTest.exe'
 JSFORMATTER_REL_PATH_WIN_ARM64 = '../../trunk/arm64/release/JSFormatterTest.exe'
 JSFORMATTER_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Debug/JSFormatterTest'
 JSFORMATTER_REL_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Release/JSFormatterTest'
-JSFORMATTER_NODEJS_SCRIPT_PATH = '../JSToolJS/jsfjsnode.js'
+JSFORMATTER_NODEJS_SCRIPT_PATH = '../../JSToolJS/jsfjsnode.js'
 
 class NodeCaseRuntime(CaseRuntime):
     def _case_execute(self, test_case):

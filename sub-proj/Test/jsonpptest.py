@@ -20,7 +20,7 @@ JSONPP_PATH_WIN_ARM64 = '../../trunk/arm64/debug/JsonPP.exe'
 JSONPP_REL_PATH_WIN_ARM64 = '../../trunk/arm64/release/JsonPP.exe'
 JSONPP_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Debug/JsonPP'
 JSONPP_REL_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Release/JsonPP'
-JSONPP_NODEJS_SCRIPT_PATH = '../JSToolJS/jsonppjsnode.js'
+JSONPP_NODEJS_SCRIPT_PATH = '../../JSToolJS/jsonppjsnode.js'
 
 class NativeCaseRuntime(CaseRuntime):
     def __init__(self, runtime_path, sort):
