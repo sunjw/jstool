@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\trunk\src\jsparser.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsparser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\JSParserTest.cpp">
@@ -26,7 +26,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\trunk\src\jsparser.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsparser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\JSTokenDump.h">

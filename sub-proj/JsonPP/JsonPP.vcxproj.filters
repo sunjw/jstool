@@ -18,19 +18,19 @@
     <ClCompile Include="src\jsonFileProc.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsonparser.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsonparser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsonValue.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsonValue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsparser.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsparser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\strhelper.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\strhelper.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,19 +38,19 @@
     <ClInclude Include="src\jsonFileProc.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsonparser.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsonparser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsonpp.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsonpp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsparser.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsparser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\strhelper.h">
+    <ClInclude Include="..\..\JSToolNpp\src\strhelper.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\unsortedmap.h">
+    <ClInclude Include="..\..\JSToolNpp\src\unsortedmap.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

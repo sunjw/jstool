@@ -18,42 +18,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\trunk\src\jsfGenericIO.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsfGenericIO.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsformatter.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsformatter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsfStringIO.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsfStringIO.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\jsparser.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\jsparser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\trunk\src\realjsformatter.cpp">
+    <ClCompile Include="..\..\JSToolNpp\src\realjsformatter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\trunk\src\jsfGenericIO.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsfGenericIO.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsformatter.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsformatter.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsfStringIO.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsfStringIO.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\jsparser.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsparser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\realjsformatter.h">
+    <ClInclude Include="..\..\JSToolNpp\src\realjsformatter.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\trunk\src\version.h">
+    <ClInclude Include="..\..\JSToolNpp\src\version.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\trunk\src\jsformatter.h">
+    <ClInclude Include="..\..\JSToolNpp\src\jsformatter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
