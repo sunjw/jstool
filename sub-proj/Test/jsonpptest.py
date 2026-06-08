@@ -14,12 +14,12 @@ TEST_CASE_DIR = 'jsonpp'
 OUTPUT_FILE_NAME = 'out.json'
 WIN_ARM64 = 'ARM64'
 
-JSONPP_PATH_WIN = '../../trunk/x64/debug/JsonPP.exe'
-JSONPP_REL_PATH_WIN = '../../trunk/x64/release/JsonPP.exe'
-JSONPP_PATH_WIN_ARM64 = '../../trunk/arm64/debug/JsonPP.exe'
-JSONPP_REL_PATH_WIN_ARM64 = '../../trunk/arm64/release/JsonPP.exe'
-JSONPP_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Debug/JsonPP'
-JSONPP_REL_PATH_MAC = '../../trunk/DerivedData/JSTool/Build/Products/Release/JsonPP'
+JSONPP_PATH_WIN = '../../JSToolNpp/x64/debug/JsonPP.exe'
+JSONPP_REL_PATH_WIN = '../../JSToolNpp/x64/release/JsonPP.exe'
+JSONPP_PATH_WIN_ARM64 = '../../JSToolNpp/arm64/debug/JsonPP.exe'
+JSONPP_REL_PATH_WIN_ARM64 = '../../JSToolNpp/arm64/release/JsonPP.exe'
+JSONPP_PATH_MAC = '../../JSToolNpp/DerivedData/JSTool/Build/Products/Debug/JsonPP'
+JSONPP_REL_PATH_MAC = '../../JSToolNpp/DerivedData/JSTool/Build/Products/Release/JsonPP'
 JSONPP_NODEJS_SCRIPT_PATH = '../../JSToolJS/jsonppjsnode.js'
 
 class NativeCaseRuntime(CaseRuntime):
