@@ -6,7 +6,7 @@
   "publisher": "sunjw",
   "license": "GPL-2.0",
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Formatters",
