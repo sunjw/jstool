@@ -1,3 +1,8 @@
+26.7.21  
+[Common] Fix format of "?:".  
+[VSC] Some tweak.  
+[NPP] Deprecated.  
+
 25.11.16  
 [Common] Minor tweak.  
 [NPP] Update to VS 2026.  
