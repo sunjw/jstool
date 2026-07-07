@@ -7,8 +7,6 @@ Really helpful to JavaScript coder on Visual Studio Code. Easy to use it.
 Made in China.  
 Project site: http://www.sunjw.us/jstool
 
-<a href="https://ko-fi.com/Y8Y72L3FZ"><img src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2" alt="Buy Me a Coffee at ko-fi.com" height="36"></a>
-
 #### FEATURES
  * JavaScript minify.
  * JavaScript/JSON format.
