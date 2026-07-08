@@ -22,10 +22,9 @@ $cur_version = $download_array["JSMinNpp"]["version"];
                     <div class="listHeaderTitle"><a name="intro" title="Intro"></a>Intro</div>
                 </div>
                 <div class="listContainer">
-                    <p>A JavaScript tool for <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</p>
+                    <p>A JavaScript (JSON) tool for <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</p>
                     <ul class="indentList discList">
-                        <li>Porting from <a href="https://sourceforge.net/projects/jsminnpp/files/stats/timeline?dates=2010-09-09%20to%202018-09-09&period=daily" target="_blank">2M+</a> downloads JavaScript tool for Notepad++.</li>
-                        <li><a href="http://www.crockford.com/Javascript/jsmin.html" target="_blank">Douglas Crockford's JSMin</a>  algorithm to minimize JavaScript code.</li>
+                        <li><a href="http://www.crockford.com/Javascript/jsmin.html" target="_blank">Douglas Crockford's JSMin</a> algorithm to minimize JavaScript code.</li>
                         <li>My own algorithm to format JavaScript code.</li>
                         <li>A JSON tree viewer.</li>
                     </ul>
@@ -44,7 +43,8 @@ $cur_version = $download_array["JSMinNpp"]["version"];
                     <p>&nbsp;</p>
                     <p>What's New in <a href="https://marketplace.visualstudio.com/items?itemName=sunjw.jstool" target="_blank"><?php echo $cur_version; ?></a>:</p>
                     <ul class="indentList discList">
-                        <li>Minor tweak.</li>
+                        <li>Fix format of "?:".</li>
+                        <li>Some tweak.</li>
                     </ul>
                     <p>&nbsp;</p>
                     <p><a href='https://ko-fi.com/Y8Y72L3FZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></p>
@@ -67,13 +67,13 @@ $cur_version = $download_array["JSMinNpp"]["version"];
                     <p>Other files:</p>
                     <ul class="indentList discList">
                         <li>
-                        README: <a href="https://github.com/sunjw/jstoolnpp/blob/master/sub-proj/JSFormatterJS/README.md" target="_blank">https://github.com/sunjw/jstoolnpp/blob/master/sub-proj/JSFormatterJS/README.md</a>
+                        README: <a href="https://github.com/sunjw/jstool/blob/master/JSToolJS/README.md" target="_blank">https://github.com/sunjw/jstool/blob/master/JSToolJS/README.md</a>
                         </li>
                         <li>
-                        Change log: <a href="https://github.com/sunjw/jstoolnpp/blob/master/sub-proj/JSFormatterJS/CHANGELOG.md" target="_blank">https://github.com/sunjw/jstoolnpp/blob/master/sub-proj/JSFormatterJS/CHANGELOG.md</a>
+                        Change log: <a href="https://github.com/sunjw/jstool/blob/master/JSToolJS/CHANGELOG.md" target="_blank">https://github.com/sunjw/jstool/blob/master/JSToolJS/CHANGELOG.md</a>
                         </li>
                         <li>
-                        Source code: <a href="https://github.com/sunjw/jstoolnpp" target="_blank">https://github.com/sunjw/jstoolnpp</a>
+                        Source code: <a href="https://github.com/sunjw/jstool" target="_blank">https://github.com/sunjw/jstool</a>
                         </li>
                     </ul>
                 </div>
@@ -125,13 +125,13 @@ $cur_version = $download_array["JSMinNpp"]["version"];
                                 <p>&nbsp;</p>
                                 <p>Format all code in a source code file:</p>
                                 <ol class="indentList">
-                                    <li>Open you JavaScript source code file in Notepad++.</li>
+                                    <li>Open you JavaScript source code file in Visual Studio Code.</li>
                                     <li>Using the "Format JavaScript (JSON)" command in the Command Palette.</li>
                                 </ol>
                                 <p>&nbsp;</p>
                                 <p>Format selected code in a source code file:</p>
                                 <ol class="indentList">
-                                    <li>Open you JavaScript source code file in Notepad++.</li>
+                                    <li>Open you JavaScript source code file in Visual Studio Code.</li>
                                     <li>Select source code lines which you want to format.</li>
                                     <li>Using the "Format JavaScript (JSON)" command in the Command Palette.</li>
                                 </ol>
