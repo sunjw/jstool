@@ -98,11 +98,7 @@ if ($checking) {
                         <li>JSON tree viewer.</li>
                     </ul>
                     <p>&nbsp;</p>
-                    <p>What's New in <a class="smoothAnchor" href="#download"><?php echo $cur_version; ?></a>:</p>
-                    <ul class="indentList discList">
-                        <li>Update to VS 2026.</li>
-                        <li>Minor tweak.</li>
-                    </ul>
+                    <p><strong>JSTool for Notepad++ is deprecated after version 25.11.16.</strong> No further updates will be released. The downloads below remain available for existing users, but new development has moved to <a href="../vsc/">JSTool for Visual Studio Code</a>.</p>
                     <p>&nbsp;</p>
                     <p><a href='https://ko-fi.com/Y8Y72L3FZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></p>
                 </div>
