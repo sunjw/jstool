@@ -108,10 +108,7 @@ if ($checking) {
                     <div class="listHeaderTitle"><a name="download" title="Download"></a>Download</div>
 <?php
 if ($checking) {
-    if ($is_lastest)
-        echo "<div id=\"checkMsg\" class=\"latest\">ℹ️ JSTool for Notepad++ is deprecated,.</div>";
-    else
-        echo "<div id=\"checkMsg\" class=\"notLatest\">ℹ️ JSTool for Notepad++ is deprecated.</div>";
+    echo "<div id=\"checkMsg\" class=\"latest\">⚠️ JSTool for Notepad++ is deprecated.</div>";
 }
 ?>
                 </div>
