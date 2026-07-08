@@ -109,9 +109,9 @@ if ($checking) {
 <?php
 if ($checking) {
     if ($is_lastest)
-        echo "<div id=\"checkMsg\" class=\"latest\">🎉 Congratulations! You are using the latest version.</div>";
+        echo "<div id=\"checkMsg\" class=\"latest\">ℹ️ JSTool for Notepad++ is deprecated,.</div>";
     else
-        echo "<div id=\"checkMsg\" class=\"notLatest\">❌ You are <strong>NOT</strong> using the latest version.</div>";
+        echo "<div id=\"checkMsg\" class=\"notLatest\">ℹ️ JSTool for Notepad++ is deprecated.</div>";
 }
 ?>
                 </div>
