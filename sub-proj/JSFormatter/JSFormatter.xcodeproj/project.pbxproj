@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,10 +38,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		416F58381BA8477D0086D6D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -93,7 +91,6 @@
 /* Begin PBXHeadersBuildPhase section */
 		416F58391BA8477D0086D6D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				4102C69A1D75D1A00008E61C /* version.h in Headers */,
 				416F58491BA849AA0086D6D5 /* jsformatter.h in Headers */,
@@ -102,7 +99,6 @@
 				416F58481BA849AA0086D6D5 /* jsfGenericIO.h in Headers */,
 				416F584A1BA849AA0086D6D5 /* jsparser.h in Headers */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
@@ -116,8 +112,6 @@
 				416F58391BA8477D0086D6D5 /* Headers */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = JSFormatter;
 			productName = JSFormatter;
@@ -140,7 +134,6 @@
 				};
 			};
 			buildConfigurationList = 416F58361BA8477D0086D6D5 /* Build configuration list for PBXProject "JSFormatter" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -148,6 +141,8 @@
 				Base,
 			);
 			mainGroup = 416F58321BA8477D0086D6D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = 416F583C1BA8477D0086D6D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,7 +155,6 @@
 /* Begin PBXSourcesBuildPhase section */
 		416F58371BA8477D0086D6D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				416F58501BA849CE0086D6D5 /* jsfGenericIO.cpp in Sources */,
 				41F6C8D51E7A2BD50096D29C /* jsfStringIO.cpp in Sources */,
@@ -168,12 +162,11 @@
 				416F58511BA849CE0086D6D5 /* jsformatter.cpp in Sources */,
 				416F58521BA849CE0086D6D5 /* jsparser.cpp in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		416F583D1BA8477D0086D6D5 /* Debug */ = {
+		416F583D1BA8477D0086D6D5 /* Debug configuration for PBXProject "JSFormatter" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		416F583E1BA8477D0086D6D5 /* Release */ = {
+		416F583E1BA8477D0086D6D5 /* Release configuration for PBXProject "JSFormatter" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +276,7 @@
 			};
 			name = Release;
 		};
-		416F58401BA8477D0086D6D5 /* Debug */ = {
+		416F58401BA8477D0086D6D5 /* Debug configuration for PBXNativeTarget "JSFormatter" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -300,7 +293,7 @@
 			};
 			name = Debug;
 		};
-		416F58411BA8477D0086D6D5 /* Release */ = {
+		416F58411BA8477D0086D6D5 /* Release configuration for PBXNativeTarget "JSFormatter" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -322,19 +315,17 @@
 		416F58361BA8477D0086D6D5 /* Build configuration list for PBXProject "JSFormatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				416F583D1BA8477D0086D6D5 /* Debug */,
-				416F583E1BA8477D0086D6D5 /* Release */,
+				416F583D1BA8477D0086D6D5 /* Debug configuration for PBXProject "JSFormatter" */,
+				416F583E1BA8477D0086D6D5 /* Release configuration for PBXProject "JSFormatter" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		416F583F1BA8477D0086D6D5 /* Build configuration list for PBXNativeTarget "JSFormatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				416F58401BA8477D0086D6D5 /* Debug */,
-				416F58411BA8477D0086D6D5 /* Release */,
+				416F58401BA8477D0086D6D5 /* Debug configuration for PBXNativeTarget "JSFormatter" */,
+				416F58411BA8477D0086D6D5 /* Release configuration for PBXNativeTarget "JSFormatter" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

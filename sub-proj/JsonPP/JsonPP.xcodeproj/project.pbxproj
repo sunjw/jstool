@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,9 +18,8 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		41C595C52FCED5330099F3CC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstSubfolder = None;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -45,10 +44,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		41C595C42FCED5330099F3CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -108,11 +105,7 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = JsonPP;
-			packageProductDependencies = (
-			);
 			productName = JsonPP;
 			productReference = 41C595C72FCED5330099F3CC /* JsonPP */;
 			productType = "com.apple.product-type.tool";
@@ -125,6 +118,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 2700;
+				ORGANIZATIONNAME = "Sun Junwen";
 				TargetAttributes = {
 					41C595C62FCED5330099F3CC = {
 						CreatedOnToolsVersion = 26.5;
@@ -140,7 +134,7 @@
 			);
 			mainGroup = 41C595BE2FCED5330099F3CC;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = 41C595C82FCED5330099F3CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,7 +147,6 @@
 /* Begin PBXSourcesBuildPhase section */
 		41C595C32FCED5330099F3CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				41C595E22FCED9F80099F3CC /* jsonparser.cpp in Sources */,
 				41C595E72FCEDADE0099F3CC /* jsonValue.cpp in Sources */,
@@ -162,12 +155,11 @@
 				41C595E52FCEDA560099F3CC /* jsparser.cpp in Sources */,
 				41C595EA2FCEDBD10099F3CC /* strhelper.cpp in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		41C595CC2FCED5330099F3CC /* Debug */ = {
+		41C595CC2FCED5330099F3CC /* Debug configuration for PBXProject "JsonPP" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		41C595CD2FCED5330099F3CC /* Release */ = {
+		41C595CD2FCED5330099F3CC /* Release configuration for PBXProject "JsonPP" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +278,7 @@
 			};
 			name = Release;
 		};
-		41C595CF2FCED5330099F3CC /* Debug */ = {
+		41C595CF2FCED5330099F3CC /* Debug configuration for PBXNativeTarget "JsonPP" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -297,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		41C595D02FCED5330099F3CC /* Release */ = {
+		41C595D02FCED5330099F3CC /* Release configuration for PBXNativeTarget "JsonPP" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -314,19 +306,17 @@
 		41C595C22FCED5330099F3CC /* Build configuration list for PBXProject "JsonPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41C595CC2FCED5330099F3CC /* Debug */,
-				41C595CD2FCED5330099F3CC /* Release */,
+				41C595CC2FCED5330099F3CC /* Debug configuration for PBXProject "JsonPP" */,
+				41C595CD2FCED5330099F3CC /* Release configuration for PBXProject "JsonPP" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		41C595CE2FCED5330099F3CC /* Build configuration list for PBXNativeTarget "JsonPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41C595CF2FCED5330099F3CC /* Debug */,
-				41C595D02FCED5330099F3CC /* Release */,
+				41C595CF2FCED5330099F3CC /* Debug configuration for PBXNativeTarget "JsonPP" */,
+				41C595D02FCED5330099F3CC /* Release configuration for PBXNativeTarget "JsonPP" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

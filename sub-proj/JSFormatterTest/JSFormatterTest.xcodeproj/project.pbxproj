@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,8 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		416F585B1BA84C6F0086D6D5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstSubfolder = None;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -33,11 +32,9 @@
 /* Begin PBXFrameworksBuildPhase section */
 		416F585A1BA84C6F0086D6D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				416F58701BA84E9E0086D6D5 /* libJSFormatter.dylib in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -97,8 +94,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = JSFormatterTest;
 			productName = JSFormatterTest;
 			productReference = 416F585D1BA84C6F0086D6D5 /* JSFormatterTest */;
@@ -120,7 +115,6 @@
 				};
 			};
 			buildConfigurationList = 416F58581BA84C6F0086D6D5 /* Build configuration list for PBXProject "JSFormatterTest" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -128,6 +122,8 @@
 				Base,
 			);
 			mainGroup = 416F58541BA84C6F0086D6D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = 416F585E1BA84C6F0086D6D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,16 +136,14 @@
 /* Begin PBXSourcesBuildPhase section */
 		416F58591BA84C6F0086D6D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				416F586B1BA84D8C0086D6D5 /* JSFormatterConsole.cpp in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		416F58621BA84C6F0086D6D5 /* Debug */ = {
+		416F58621BA84C6F0086D6D5 /* Debug configuration for PBXProject "JSFormatterTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		416F58631BA84C6F0086D6D5 /* Release */ = {
+		416F58631BA84C6F0086D6D5 /* Release configuration for PBXProject "JSFormatterTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +253,7 @@
 			};
 			name = Release;
 		};
-		416F58651BA84C6F0086D6D5 /* Debug */ = {
+		416F58651BA84C6F0086D6D5 /* Debug configuration for PBXNativeTarget "JSFormatterTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -275,7 +269,7 @@
 			};
 			name = Debug;
 		};
-		416F58661BA84C6F0086D6D5 /* Release */ = {
+		416F58661BA84C6F0086D6D5 /* Release configuration for PBXNativeTarget "JSFormatterTest" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -296,19 +290,17 @@
 		416F58581BA84C6F0086D6D5 /* Build configuration list for PBXProject "JSFormatterTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				416F58621BA84C6F0086D6D5 /* Debug */,
-				416F58631BA84C6F0086D6D5 /* Release */,
+				416F58621BA84C6F0086D6D5 /* Debug configuration for PBXProject "JSFormatterTest" */,
+				416F58631BA84C6F0086D6D5 /* Release configuration for PBXProject "JSFormatterTest" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		416F58641BA84C6F0086D6D5 /* Build configuration list for PBXNativeTarget "JSFormatterTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				416F58651BA84C6F0086D6D5 /* Debug */,
-				416F58661BA84C6F0086D6D5 /* Release */,
+				416F58651BA84C6F0086D6D5 /* Debug configuration for PBXNativeTarget "JSFormatterTest" */,
+				416F58661BA84C6F0086D6D5 /* Release configuration for PBXNativeTarget "JSFormatterTest" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
